@@ -1,0 +1,6 @@
+benchmark,reference_method,published_accuracy,cases,fast_only_correct,fast_only_accuracy_percent,dg_mcts_correct,dg_mcts_accuracy_percent
+Large-Scale-OR,LEAN-LLM-OPT,85.1%,101,94,93.1,95,94.1
+Air-NRM (CA),LEAN-LLM-OPT,93.3%,15,13,86.7,15,100.0
+Air-NRM (NP-Flow),LEAN-LLM-OPT,92.1%,21,18,85.7,20,95.2
+OptiBench,LLMOPT (Qwen2.5-14B),66.4%,605,443,73.2,464,76.7
+OptMATH-Bench,LLMOPT (Qwen2.5-14B),40.0%,166,61,36.7,70,42.2

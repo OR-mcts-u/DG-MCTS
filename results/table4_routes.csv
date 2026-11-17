@@ -1,0 +1,22 @@
+dataset,method,cases,correct,accuracy_percent,mean_llm_calls,mean_tokens,mean_wall_seconds
+Mamo-E sample,Fast Only,50,47,94.0,3.3,11185,17.4
+Mamo-E sample,DG-MCTS,50,46,92.0,40.0,130006,142.9
+Mamo-E sample,Always Slow,50,45,90.0,98.6,303280,348.9
+Mamo-C sample,Fast Only,50,36,72.0,3.2,16456,22.4
+Mamo-C sample,DG-MCTS,50,38,76.0,48.2,253578,233.2
+Mamo-C sample,Always Slow,50,37,74.0,97.0,445617,419.6
+NLP4LP sample,Fast Only,50,43,86.0,3.1,10309,14.8
+NLP4LP sample,DG-MCTS,50,44,88.0,70.9,219600,269.4
+NLP4LP sample,Always Slow,50,45,90.0,87.4,267023,361.2
+IndustryOR easy,Fast Only,40,26,65.0,3.2,12728,17.7
+IndustryOR easy,DG-MCTS,40,31,77.5,64.6,244956,420.1
+IndustryOR easy,Always Slow,40,30,75.0,101.6,376867,389.9
+IndustryOR medium,Fast Only,40,17,42.5,3.3,14438,20.5
+IndustryOR medium,DG-MCTS,40,19,47.5,86.7,401047,480.1
+IndustryOR medium,Always Slow,40,20,50.0,104.8,476715,449.1
+IndustryOR hard,Fast Only,20,8,40.0,3.4,15691,28.5
+IndustryOR hard,DG-MCTS,20,12,60.0,85.3,441588,402.1
+IndustryOR hard,Always Slow,20,12,60.0,90.1,436263,539.9
+Overall,Fast Only,250,177,70.8,3.2,13192,19.3
+Overall,DG-MCTS,250,190,76.0,62.9,259324,305.3
+Overall,Always Slow,250,189,75.6,96.8,374658,403.4

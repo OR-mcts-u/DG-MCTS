@@ -1,0 +1,10 @@
+variant,dataset,target_cases,observed_final_results,correct,accuracy_percent,baseline_correct,baseline_cases,baseline_accuracy_percent,difference_pp
+rule_execution_heavy,Overall,150,150,97,64.7,103,150,68.7,-4.0
+rule_objective_heavy,Overall,150,150,97,64.7,103,150,68.7,-4.0
+rule_structure_heavy,Overall,150,150,97,64.7,103,150,68.7,-4.0
+sem_data_definition_heavy,Overall,150,150,99,66.0,103,150,68.7,-2.7
+sem_implementation_heavy,Overall,150,149,94,62.7,103,150,68.7,-6.0
+sem_math_structure_heavy,Overall,150,150,97,64.7,103,150,68.7,-4.0
+cap_core_model_heavy,Overall,150,150,103,68.7,103,150,68.7,0.0
+cap_revision_heavy,Overall,150,150,97,64.7,103,150,68.7,-4.0
+cap_semantic_numeric_heavy,Overall,150,150,98,65.3,103,150,68.7,-3.4

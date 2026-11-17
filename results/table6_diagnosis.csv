@@ -1,0 +1,9 @@
+category,detected,final_correct,final_incorrect,recovery_percent
+Answer/reporting error,421,337,84,80.0
+Code/execution error,120,79,41,65.8
+Solver status / feasibility error,41,22,19,53.7
+Variable/domain error,103,68,35,66.0
+Objective modeling error,112,73,39,65.2
+Constraint modeling error,130,82,48,63.1
+Parameter / numeric coverage error,334,231,103,69.2
+Unit / business semantics error,89,59,30,66.3

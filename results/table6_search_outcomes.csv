@@ -1,0 +1,10 @@
+dataset,slow_entered,final_correct,initial_reused,initial_share_percent,revised_selected,revised_share_percent
+ComplexOR,12,11,2,18.2,9,81.8
+IndustryOR easy,31,23,13,56.5,10,43.5
+IndustryOR medium,38,17,6,35.3,11,64.7
+IndustryOR hard,18,10,3,30.0,7,70.0
+Mamo-E,201,162,22,13.6,140,86.4
+Mamo-C,129,93,22,23.7,71,76.3
+NL4Opt,184,162,60,37.0,102,63.0
+NLP4LP,171,144,52,36.1,92,63.9
+Overall,784,622,180,28.9,442,71.1
