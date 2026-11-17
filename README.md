@@ -118,7 +118,7 @@ python src/main.py --config config.yaml --dataset nl4opt --limit 1
 
 Set `OPENAI_API_KEY` in your environment and configure the provider URL and model in `config.yaml`. Execution uses an OpenAI-compatible API, Pyomo, and Gurobi with a valid license. The example runs one instance with a 20-iteration search budget.
 
-## 🗂️ Code & Data
+## 📦 Code & Data
 
 | Start here | What's inside |
 |:--|:--|
