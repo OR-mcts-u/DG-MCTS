@@ -1,0 +1,85 @@
+table,method,benchmark,accuracy
+2,IO (GPT-4o-mini),NL4Opt,72.3%
+2,IO (GPT-4o-mini),NLP4LP,72.7%
+2,IO (GPT-4o-mini),Mamo-E,83.1%
+2,IO (GPT-4o-mini),ComplexOR,55.6%
+2,IO (GPT-4o-mini),Mamo-C,33.7%
+2,IO (GPT-4o-mini),IndustryOR,35.0%
+2,IO (Gemini-2.5),NL4Opt,77.5%
+2,IO (Gemini-2.5),NLP4LP,73.6%
+2,IO (Gemini-2.5),Mamo-E,81.6%
+2,IO (Gemini-2.5),ComplexOR,72.2%
+2,IO (Gemini-2.5),Mamo-C,47.4%
+2,IO (Gemini-2.5),IndustryOR,43.0%
+2,IO (o4-mini),NL4Opt,77.9%
+2,IO (o4-mini),NLP4LP,81.8%
+2,IO (o4-mini),Mamo-E,83.7%
+2,IO (o4-mini),ComplexOR,72.2%
+2,IO (o4-mini),Mamo-C,43.6%
+2,IO (o4-mini),IndustryOR,50.0%
+2,IO (GPT-5.4-mini),NL4Opt,80.5%
+2,IO (GPT-5.4-mini),NLP4LP,83.1%
+2,IO (GPT-5.4-mini),Mamo-E,86.8%
+2,IO (GPT-5.4-mini),ComplexOR,77.8%
+2,IO (GPT-5.4-mini),Mamo-C,66.4%
+2,IO (GPT-5.4-mini),IndustryOR,56.0%
+2,CoE (GPT-5.4-mini),Mamo-C,66.4%
+2,ECO (GPT-4o-mini),NL4Opt,79.2%
+2,ECO (GPT-4o-mini),NLP4LP,86.8%
+2,ECO (GPT-4o-mini),Mamo-E,86.7%
+2,ECO (GPT-4o-mini),ComplexOR,77.8%
+2,ECO (GPT-4o-mini),Mamo-C,57.4%
+2,ECO (GPT-4o-mini),IndustryOR,43.0%
+2,ECO (o4-mini),NL4Opt,86.2%
+2,ECO (o4-mini),NLP4LP,86.8%
+2,ECO (o4-mini),Mamo-E,84.4%
+2,ECO (o4-mini),ComplexOR,83.3%
+2,ECO (o4-mini),Mamo-C,71.6%
+2,ECO (o4-mini),IndustryOR,59.0%
+2,ORLM (Mistral-7B),NL4Opt,84.4%^*
+2,ORLM (Mistral-7B),NLP4LP,--
+2,ORLM (Mistral-7B),Mamo-E,81.4%^*
+2,ORLM (Mistral-7B),ComplexOR,--
+2,ORLM (Mistral-7B),Mamo-C,32.0%^*
+2,ORLM (Mistral-7B),IndustryOR,27.0%^*
+2,ORLM (Deepseek-Math-7B),NL4Opt,86.5%^*
+2,ORLM (Deepseek-Math-7B),NLP4LP,--
+2,ORLM (Deepseek-Math-7B),Mamo-E,82.2%^*
+2,ORLM (Deepseek-Math-7B),ComplexOR,--
+2,ORLM (Deepseek-Math-7B),Mamo-C,37.9%^*
+2,ORLM (Deepseek-Math-7B),IndustryOR,33.0%^*
+2,ORLM (LLaMa3-8B),NL4Opt,85.7%^*
+2,ORLM (LLaMa3-8B),NLP4LP,--
+2,ORLM (LLaMa3-8B),Mamo-E,82.3%^*
+2,ORLM (LLaMa3-8B),ComplexOR,--
+2,ORLM (LLaMa3-8B),Mamo-C,37.4%^*
+2,ORLM (LLaMa3-8B),IndustryOR,38.0%^*
+2,ORLM (Qwen2.5-7B),NL4Opt,86.1%^*
+2,ORLM (Qwen2.5-7B),NLP4LP,--
+2,ORLM (Qwen2.5-7B),Mamo-E,85.2%^*
+2,ORLM (Qwen2.5-7B),ComplexOR,--
+2,ORLM (Qwen2.5-7B),Mamo-C,44.1%^*
+2,ORLM (Qwen2.5-7B),IndustryOR,25.0%^*
+2,LLMOPT (Qwen1.5-14B),NL4Opt,93.0%^*
+2,LLMOPT (Qwen1.5-14B),NLP4LP,83.8%^*
+2,LLMOPT (Qwen1.5-14B),Mamo-E,97.0%^*
+2,LLMOPT (Qwen1.5-14B),ComplexOR,72.2%^*
+2,LLMOPT (Qwen1.5-14B),Mamo-C,68.0%^*
+2,LLMOPT (Qwen1.5-14B),IndustryOR,46.0%^*
+2,Experts,NL4Opt,94.3%
+2,Experts,NLP4LP,--
+2,Experts,Mamo-E,90.4%
+2,Experts,ComplexOR,--
+2,Experts,Mamo-C,78.9%
+2,Experts,IndustryOR,76.0%
+2,Senior Undergraduates,NL4Opt,80.4%
+2,Senior Undergraduates,NLP4LP,--
+2,Senior Undergraduates,Mamo-E,84.9%
+2,Senior Undergraduates,ComplexOR,--
+2,Senior Undergraduates,Mamo-C,53.1%
+2,Senior Undergraduates,IndustryOR,44.0%
+3,LEAN-LLM-OPT,Large-Scale-OR,85.1%
+3,LEAN-LLM-OPT,Air-NRM (CA),93.3%
+3,LEAN-LLM-OPT,Air-NRM (NP-Flow),92.1%
+3,LLMOPT (Qwen2.5-14B),OptiBench,66.4%
+3,LLMOPT (Qwen2.5-14B),OptMATH-Bench,40.0%

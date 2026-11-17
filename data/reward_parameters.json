@@ -1,0 +1,214 @@
+{
+  "defaults": {
+    "rule_weights": {
+      "exec": 0.3,
+      "solve": 0.1,
+      "obj": 0.4,
+      "def": 0.1,
+      "str": 0.1
+    },
+    "semantic_weights": {
+      "sets": 0.1,
+      "parameters": 0.15,
+      "variables": 0.2,
+      "objective": 0.25,
+      "constraints": 0.25,
+      "code": 0.15
+    },
+    "risk_caps": {
+      "any_need_revise": 0.82,
+      "core_need_revise": 0.72,
+      "review_hard_flags": 0.68,
+      "review_high_semantic_risk": 0.6,
+      "missing_or_changed_numbers": 0.6,
+      "unchecked_numeric_groups": 0.78,
+      "rule_hard_flags": 0.7,
+      "rule_high_semantic_risk": 0.6
+    }
+  },
+  "variants": {
+    "rule_execution_heavy": {
+      "ablation_mode": "rule_execution_heavy",
+      "ablation_parameter_config": {
+        "term": "R_rule",
+        "description": "Emphasize execution validity and solver status in rule reward.",
+        "selection_weights": {
+          "exec": 0.45,
+          "solve": 0.2,
+          "obj": 0.2,
+          "def": 0.075,
+          "str": 0.075
+        }
+      },
+      "model": "gpt-5.4-mini",
+      "iterations": 20,
+      "time_limit": 500,
+      "num_components": 3,
+      "initial_accept_threshold": 0.0
+    },
+    "rule_objective_heavy": {
+      "ablation_mode": "rule_objective_heavy",
+      "ablation_parameter_config": {
+        "term": "R_rule",
+        "description": "Emphasize objective-value availability in rule reward.",
+        "selection_weights": {
+          "obj": 0.6,
+          "exec": 0.2,
+          "solve": 0.1,
+          "def": 0.05,
+          "str": 0.05
+        }
+      },
+      "model": "gpt-5.4-mini",
+      "iterations": 20,
+      "time_limit": 500,
+      "num_components": 3,
+      "initial_accept_threshold": 0.0
+    },
+    "rule_structure_heavy": {
+      "ablation_mode": "rule_structure_heavy",
+      "ablation_parameter_config": {
+        "term": "R_rule",
+        "description": "Emphasize definition and structural soundness in rule reward.",
+        "selection_weights": {
+          "def": 0.25,
+          "str": 0.25,
+          "exec": 0.25,
+          "obj": 0.15,
+          "solve": 0.1
+        }
+      },
+      "model": "gpt-5.4-mini",
+      "iterations": 20,
+      "time_limit": 500,
+      "num_components": 3,
+      "initial_accept_threshold": 0.0
+    },
+    "sem_data_definition_heavy": {
+      "ablation_mode": "sem_data_definition_heavy",
+      "ablation_parameter_config": {
+        "term": "R_sem",
+        "description": "Emphasize sets, parameters, and variables in LLM semantic penalty.",
+        "review_penalty_weights": {
+          "sets": 0.2,
+          "parameters": 0.25,
+          "variables": 0.25,
+          "objective": 0.1,
+          "constraints": 0.1,
+          "code": 0.1
+        }
+      },
+      "model": "gpt-5.4-mini",
+      "iterations": 20,
+      "time_limit": 500,
+      "num_components": 3,
+      "initial_accept_threshold": 0.0
+    },
+    "sem_implementation_heavy": {
+      "ablation_mode": "sem_implementation_heavy",
+      "ablation_parameter_config": {
+        "term": "R_sem",
+        "description": "Emphasize Pyomo/code faithfulness in LLM semantic penalty.",
+        "review_penalty_weights": {
+          "sets": 0.05,
+          "parameters": 0.1,
+          "variables": 0.1,
+          "objective": 0.15,
+          "constraints": 0.2,
+          "code": 0.4
+        }
+      },
+      "model": "gpt-5.4-mini",
+      "iterations": 20,
+      "time_limit": 500,
+      "num_components": 3,
+      "initial_accept_threshold": 0.0
+    },
+    "sem_math_structure_heavy": {
+      "ablation_mode": "sem_math_structure_heavy",
+      "ablation_parameter_config": {
+        "term": "R_sem",
+        "description": "Emphasize objective and constraints in LLM semantic penalty.",
+        "review_penalty_weights": {
+          "sets": 0.05,
+          "parameters": 0.1,
+          "variables": 0.1,
+          "objective": 0.3,
+          "constraints": 0.35,
+          "code": 0.1
+        }
+      },
+      "model": "gpt-5.4-mini",
+      "iterations": 20,
+      "time_limit": 500,
+      "num_components": 3,
+      "initial_accept_threshold": 0.0
+    },
+    "cap_core_model_heavy": {
+      "ablation_mode": "cap_core_model_heavy",
+      "ablation_parameter_config": {
+        "term": "C_risk",
+        "description": "Apply stricter caps for core modeling component revisions.",
+        "risk_caps": {
+          "any_need_revise": 0.82,
+          "core_need_revise": 0.6,
+          "review_hard_flags": 0.68,
+          "review_high_semantic_risk": 0.6,
+          "missing_or_changed_numbers": 0.6,
+          "unchecked_numeric_groups": 0.78,
+          "rule_hard_flags": 0.7,
+          "rule_high_semantic_risk": 0.6
+        }
+      },
+      "model": "gpt-5.4-mini",
+      "iterations": 20,
+      "time_limit": 500,
+      "num_components": 3,
+      "initial_accept_threshold": 0.0
+    },
+    "cap_revision_heavy": {
+      "ablation_mode": "cap_revision_heavy",
+      "ablation_parameter_config": {
+        "term": "C_risk",
+        "description": "Apply stricter caps when LLM review marks any component for revision.",
+        "risk_caps": {
+          "any_need_revise": 0.74,
+          "core_need_revise": 0.66,
+          "review_hard_flags": 0.68,
+          "review_high_semantic_risk": 0.6,
+          "missing_or_changed_numbers": 0.6,
+          "unchecked_numeric_groups": 0.78,
+          "rule_hard_flags": 0.7,
+          "rule_high_semantic_risk": 0.6
+        }
+      },
+      "model": "gpt-5.4-mini",
+      "iterations": 20,
+      "time_limit": 500,
+      "num_components": 3,
+      "initial_accept_threshold": 0.0
+    },
+    "cap_semantic_numeric_heavy": {
+      "ablation_mode": "cap_semantic_numeric_heavy",
+      "ablation_parameter_config": {
+        "term": "C_risk",
+        "description": "Apply stricter caps for hard semantic and numeric risks.",
+        "risk_caps": {
+          "any_need_revise": 0.82,
+          "core_need_revise": 0.72,
+          "review_hard_flags": 0.58,
+          "review_high_semantic_risk": 0.5,
+          "missing_or_changed_numbers": 0.5,
+          "unchecked_numeric_groups": 0.68,
+          "rule_hard_flags": 0.58,
+          "rule_high_semantic_risk": 0.5
+        }
+      },
+      "model": "gpt-5.4-mini",
+      "iterations": 20,
+      "time_limit": 500,
+      "num_components": 3,
+      "initial_accept_threshold": 0.0
+    }
+  }
+}

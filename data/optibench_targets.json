@@ -1,0 +1,6076 @@
+[
+  {
+    "id": 1,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit you can get"
+    ],
+    "expected": 3600.0,
+    "metric": "The maximum profit you can get",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 2,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 395000.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 3,
+    "kind": "scalar",
+    "keys": [
+      "The total metal extracted"
+    ],
+    "expected": 2250.0,
+    "metric": "The total metal extracted",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 4,
+    "kind": "scalar",
+    "keys": [
+      "The maximum area of the garden"
+    ],
+    "expected": 1250.0,
+    "metric": "The maximum area of the garden",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 5,
+    "kind": "scalar",
+    "keys": [
+      "The optimal number of fire stations to be built is"
+    ],
+    "expected": 2.0,
+    "metric": "The optimal number of fire stations to be built is",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 6,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 655.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 7,
+    "kind": "scalar",
+    "keys": [
+      "Total Cost"
+    ],
+    "expected": 18000.0,
+    "metric": "Total Cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 8,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 225.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 9,
+    "kind": "scalar",
+    "keys": [
+      "The perimeter of the rectangle"
+    ],
+    "expected": 40.0,
+    "metric": "The perimeter of the rectangle",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 10,
+    "kind": "scalar",
+    "keys": [
+      "The total number of carts used"
+    ],
+    "expected": 29.0,
+    "metric": "The total number of carts used",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 11,
+    "kind": "scalar",
+    "keys": [
+      "The minimum number of courses needed"
+    ],
+    "expected": 4.0,
+    "metric": "The minimum number of courses needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 12,
+    "kind": "scalar",
+    "keys": [
+      "The total sugar intake"
+    ],
+    "expected": 110.0,
+    "metric": "The total sugar intake",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 13,
+    "kind": "scalar",
+    "keys": [
+      "The monthly profit"
+    ],
+    "expected": 85500.0,
+    "metric": "The monthly profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 14,
+    "kind": "scalar",
+    "keys": [
+      "The length of the rope required to rescue him"
+    ],
+    "expected": 0.35355235026576626,
+    "metric": "The length of the rope required to rescue him",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 15,
+    "kind": "scalar",
+    "keys": [
+      "Profit Efficiency"
+    ],
+    "expected": 20.0,
+    "metric": "Profit Efficiency",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 16,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of water used"
+    ],
+    "expected": 18.0,
+    "metric": "The total amount of water used",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 17,
+    "kind": "scalar",
+    "keys": [
+      "The total time taken to transport the chicken"
+    ],
+    "expected": 34.5,
+    "metric": "The total time taken to transport the chicken",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 18,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 16800.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 19,
+    "kind": "scalar",
+    "keys": [
+      "Minimum Production Time"
+    ],
+    "expected": 2.688172043010753,
+    "metric": "Minimum Production Time",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 20,
+    "kind": "scalar",
+    "keys": [
+      "The maximum area of the rectangle"
+    ],
+    "expected": 625.0,
+    "metric": "The maximum area of the rectangle",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 21,
+    "kind": "scalar",
+    "keys": [
+      "The optimal number of fire stations to be built is"
+    ],
+    "expected": 2.0,
+    "metric": "The optimal number of fire stations to be built is",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 22,
+    "kind": "scalar",
+    "keys": [
+      "Total Revenue"
+    ],
+    "expected": 27510.0,
+    "metric": "Total Revenue",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 23,
+    "kind": "scalar",
+    "keys": [
+      "Maximum profit per day"
+    ],
+    "expected": 3900.0,
+    "metric": "Maximum profit per day",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 24,
+    "kind": "scalar",
+    "keys": [
+      "New maximum profit"
+    ],
+    "expected": 35000.0,
+    "metric": "New maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 25,
+    "kind": "scalar",
+    "keys": [
+      "The maximum volume of the box"
+    ],
+    "expected": 0.02405645428965656,
+    "metric": "The maximum volume of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 26,
+    "kind": "scalar",
+    "keys": [
+      "Energy-Impact Ratio"
+    ],
+    "expected": 307.5852470424496,
+    "metric": "Energy-Impact Ratio",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 27,
+    "kind": "scalar",
+    "keys": [
+      "The area of paper used"
+    ],
+    "expected": 164.5685424949238,
+    "metric": "The area of paper used",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 28,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost of the compound"
+    ],
+    "expected": 5.85185186,
+    "metric": "The minimum cost of the compound",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 29,
+    "kind": "scalar",
+    "keys": [
+      "Average Net Profit per Truck"
+    ],
+    "expected": 700.0,
+    "metric": "Average Net Profit per Truck",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 30,
+    "kind": "scalar",
+    "keys": [
+      "The total number of furnaces"
+    ],
+    "expected": 15.0,
+    "metric": "The total number of furnaces",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 31,
+    "kind": "scalar",
+    "keys": [
+      "The number of meals delivered"
+    ],
+    "expected": 513.0,
+    "metric": "The number of meals delivered",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 32,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 246.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 33,
+    "kind": "scalar",
+    "keys": [
+      "Energy-Impact Ratio"
+    ],
+    "expected": 307.5852470424496,
+    "metric": "Energy-Impact Ratio",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 34,
+    "kind": "vector",
+    "keys": [
+      "The quantity of Fertilizer 1",
+      "The quantity of Fertilizer 2",
+      "The quantity of Fertilizer 3",
+      "The quantity of Fertilizer 4",
+      "The quantity of Fertilizer 5"
+    ],
+    "expected": [
+      0.65,
+      0.1,
+      0.1,
+      0.15,
+      0.0
+    ],
+    "metric": "fertilizer_proportions",
+    "derivation": "逐一比较全部五个比例，而不是仅比较最后一个 0。"
+  },
+  {
+    "id": 35,
+    "kind": "scalar",
+    "keys": [
+      "Minimum Production Time"
+    ],
+    "expected": 2.1818181818181817,
+    "metric": "Minimum Production Time",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 36,
+    "kind": "scalar",
+    "keys": [
+      "The minimum daily cost"
+    ],
+    "expected": 175.0,
+    "metric": "The minimum daily cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 37,
+    "kind": "scalar",
+    "keys": [
+      "The total cost to the hospital"
+    ],
+    "expected": 12600.0,
+    "metric": "The total cost to the hospital",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 38,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost"
+    ],
+    "expected": 260000.0,
+    "metric": "The minimum cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 39,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 9500.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 40,
+    "kind": "scalar",
+    "keys": [
+      "The total cost"
+    ],
+    "expected": 1.8,
+    "metric": "The total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 41,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 45500.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 42,
+    "kind": "scalar",
+    "keys": [
+      "The amount of tea leaves picked"
+    ],
+    "expected": 17000.0,
+    "metric": "The amount of tea leaves picked",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 43,
+    "kind": "scalar",
+    "keys": [
+      "The number of miter saws",
+      "The number of circular saws"
+    ],
+    "expected": 26.0,
+    "metric": "sum_of_reference_counts",
+    "derivation": "题面优化总数：对原始参考中的这些数量求和。"
+  },
+  {
+    "id": 44,
+    "kind": "scalar",
+    "keys": [
+      "The total wage cost"
+    ],
+    "expected": 16650.0,
+    "metric": "The total wage cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 45,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 6618.1818299999995,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 46,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 256500.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 47,
+    "kind": "scalar",
+    "keys": [
+      "The maximum volume of the cylinder"
+    ],
+    "expected": 27.14458472592633,
+    "metric": "The maximum volume of the cylinder",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 48,
+    "kind": "scalar",
+    "keys": [
+      "The maximum volume of the box"
+    ],
+    "expected": 1825.2965881577802,
+    "metric": "The maximum volume of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 49,
+    "kind": "scalar",
+    "keys": [
+      "Total Cost per Unit of Energy"
+    ],
+    "expected": 3.22077922077922,
+    "metric": "Total Cost per Unit of Energy",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 50,
+    "kind": "scalar",
+    "keys": [
+      "The number of taxi rides"
+    ],
+    "expected": 78.0,
+    "metric": "The number of taxi rides",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 51,
+    "kind": "scalar",
+    "keys": [
+      "The total number of flowers transported"
+    ],
+    "expected": 465.0,
+    "metric": "The total number of flowers transported",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 52,
+    "kind": "scalar",
+    "keys": [
+      "The maximum net profit"
+    ],
+    "expected": 14.0,
+    "metric": "The maximum net profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 53,
+    "kind": "scalar",
+    "keys": [
+      "The total cost"
+    ],
+    "expected": 5900.0,
+    "metric": "The total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 54,
+    "kind": "scalar",
+    "keys": [
+      "Minimum Time to Meet Weekly Demand"
+    ],
+    "expected": 0.09523809523809523,
+    "metric": "Minimum Time to Meet Weekly Demand",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 55,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of digestive medicine needed"
+    ],
+    "expected": 735.0,
+    "metric": "The total amount of digestive medicine needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 56,
+    "kind": "scalar",
+    "keys": [
+      "Average Net Profit per Truck"
+    ],
+    "expected": 700.0,
+    "metric": "Average Net Profit per Truck",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 57,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 128000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 58,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 9210.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 59,
+    "kind": "scalar",
+    "keys": [
+      "Maximum Profit"
+    ],
+    "expected": 64000.0,
+    "metric": "Maximum Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 60,
+    "kind": "scalar",
+    "keys": [
+      "The amount of gelatine used"
+    ],
+    "expected": 3200.0,
+    "metric": "The amount of gelatine used",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 61,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 208.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 62,
+    "kind": "scalar",
+    "keys": [
+      "The product of the two numbers"
+    ],
+    "expected": 22500.0,
+    "metric": "The product of the two numbers",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 63,
+    "kind": "scalar",
+    "keys": [
+      "The total profit from the investment"
+    ],
+    "expected": 684000.0,
+    "metric": "The total profit from the investment",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 64,
+    "kind": "scalar",
+    "keys": [
+      "Total revenue"
+    ],
+    "expected": 14000.0,
+    "metric": "Total revenue",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 65,
+    "kind": "scalar",
+    "keys": [
+      "The total number of sports equipment produced"
+    ],
+    "expected": 333.0,
+    "metric": "The total number of sports equipment produced",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 66,
+    "kind": "scalar",
+    "keys": [
+      "Total amount of gas consumed"
+    ],
+    "expected": 230.0,
+    "metric": "Total amount of gas consumed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 67,
+    "kind": "scalar",
+    "keys": [
+      "The expected average payout"
+    ],
+    "expected": 65000.0,
+    "metric": "The expected average payout",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 68,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 480.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 69,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 280.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 70,
+    "kind": "scalar",
+    "keys": [
+      "The total number of patients vaccinated"
+    ],
+    "expected": 571.0,
+    "metric": "The total number of patients vaccinated",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 71,
+    "kind": "scalar",
+    "keys": [
+      "Maximized Energy Output per Dollar"
+    ],
+    "expected": 10.571142284569138,
+    "metric": "Maximized Energy Output per Dollar",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 72,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 175.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 73,
+    "kind": "scalar",
+    "keys": [
+      "Average Net Profit per Team"
+    ],
+    "expected": 55333.33333333333,
+    "metric": "Average Net Profit per Team",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 74,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 14.9,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 75,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 128000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 76,
+    "kind": "scalar",
+    "keys": [
+      "The maximum weekly profit"
+    ],
+    "expected": 75.0,
+    "metric": "The maximum weekly profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 77,
+    "kind": "scalar",
+    "keys": [
+      "The profit"
+    ],
+    "expected": 239.0,
+    "metric": "The profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 78,
+    "kind": "scalar",
+    "keys": [
+      "The maximum overall net profit"
+    ],
+    "expected": 3300.0,
+    "metric": "The maximum overall net profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 79,
+    "kind": "scalar",
+    "keys": [
+      "The weekly cost of meeting demand is"
+    ],
+    "expected": 4750.0,
+    "metric": "The weekly cost of meeting demand is",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 80,
+    "kind": "scalar",
+    "keys": [
+      "The maximum volume of the box"
+    ],
+    "expected": 11664.0,
+    "metric": "The maximum volume of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 81,
+    "kind": "scalar",
+    "keys": [
+      "Benefit-Risk Ratio"
+    ],
+    "expected": 2.4203881963074005,
+    "metric": "Benefit-Risk Ratio",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 82,
+    "kind": "scalar",
+    "keys": [
+      "The total time needed"
+    ],
+    "expected": 40.0,
+    "metric": "The total time needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 83,
+    "kind": "scalar",
+    "keys": [
+      "The minimum number of workers needed is"
+    ],
+    "expected": 22.0,
+    "metric": "The minimum number of workers needed is",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 84,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 43333.3334,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 85,
+    "kind": "scalar",
+    "keys": [
+      "The total cost of the commercials"
+    ],
+    "expected": 89000.0,
+    "metric": "The total cost of the commercials",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 86,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 80.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 87,
+    "kind": "scalar",
+    "keys": [
+      "Total Net Profit"
+    ],
+    "expected": 10382.436,
+    "metric": "Total Net Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 88,
+    "kind": "scalar",
+    "keys": [
+      "The maximum number of exposures"
+    ],
+    "expected": 146000.0,
+    "metric": "The maximum number of exposures",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 89,
+    "kind": "scalar",
+    "keys": [
+      "The minimum surface area of the box"
+    ],
+    "expected": 476.2203153047384,
+    "metric": "The minimum surface area of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 90,
+    "kind": "scalar",
+    "keys": [
+      "Maximized Energy Output per Dollar"
+    ],
+    "expected": 10.571142284569138,
+    "metric": "Maximized Energy Output per Dollar",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 91,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost of the container"
+    ],
+    "expected": 131.26857993995196,
+    "metric": "The minimum cost of the container",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 92,
+    "kind": "scalar",
+    "keys": [
+      "The maximum revenue"
+    ],
+    "expected": 50000.0,
+    "metric": "The maximum revenue",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 93,
+    "kind": "scalar",
+    "keys": [
+      "The maximum area of the pen"
+    ],
+    "expected": 80000.0,
+    "metric": "The maximum area of the pen",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 94,
+    "kind": "scalar",
+    "keys": [
+      "The maximum exposure"
+    ],
+    "expected": 147000.0,
+    "metric": "The maximum exposure",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 95,
+    "kind": "scalar",
+    "keys": [
+      "The sodium intake (mg)"
+    ],
+    "expected": 460.0,
+    "metric": "The sodium intake (mg)",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 96,
+    "kind": "scalar",
+    "keys": [
+      "The total time for the medication to be effective"
+    ],
+    "expected": 690.0,
+    "metric": "The total time for the medication to be effective",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 97,
+    "kind": "scalar",
+    "keys": [
+      "The maximum company's profit"
+    ],
+    "expected": 215000.0,
+    "metric": "The maximum company's profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 98,
+    "kind": "scalar",
+    "keys": [
+      "The weekly cost of meeting demand is"
+    ],
+    "expected": 4750.0,
+    "metric": "The weekly cost of meeting demand is",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 99,
+    "kind": "scalar",
+    "keys": [
+      "The total number of letters sent"
+    ],
+    "expected": 841.0,
+    "metric": "The total number of letters sent",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 100,
+    "kind": "scalar",
+    "keys": [
+      "The maximum volume of the box"
+    ],
+    "expected": 2030.3362942094193,
+    "metric": "The maximum volume of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 101,
+    "kind": "scalar",
+    "keys": [
+      "The total cost"
+    ],
+    "expected": 70.0,
+    "metric": "The total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 102,
+    "kind": "scalar",
+    "keys": [
+      "Total Revenue"
+    ],
+    "expected": 27510.0,
+    "metric": "Total Revenue",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 103,
+    "kind": "scalar",
+    "keys": [
+      "Total earnings per shift"
+    ],
+    "expected": 3163.26532,
+    "metric": "Total earnings per shift",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 104,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 40.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 105,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost of making the containers"
+    ],
+    "expected": 41.84810349780642,
+    "metric": "The minimum cost of making the containers",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 106,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of garbage produced"
+    ],
+    "expected": 0.0,
+    "metric": "The total amount of garbage produced",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 107,
+    "kind": "scalar",
+    "keys": [
+      "The total pollution produced"
+    ],
+    "expected": 160.0,
+    "metric": "The total pollution produced",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 108,
+    "kind": "scalar",
+    "keys": [
+      "The net revenue is"
+    ],
+    "expected": 36900.0,
+    "metric": "The net revenue is",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 109,
+    "kind": "scalar",
+    "keys": [
+      "The minimum production cost"
+    ],
+    "expected": 2910.0,
+    "metric": "The minimum production cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 110,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 2400.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 111,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 12990.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 112,
+    "kind": "scalar",
+    "keys": [
+      "Total number of animals"
+    ],
+    "expected": 19.0,
+    "metric": "Total number of animals",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 113,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of pollution produced"
+    ],
+    "expected": 2200.0,
+    "metric": "The total amount of pollution produced",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 114,
+    "kind": "scalar",
+    "keys": [
+      "The total number of stores"
+    ],
+    "expected": 8.0,
+    "metric": "The total number of stores",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 115,
+    "kind": "scalar",
+    "keys": [
+      "The maximum daily revenue"
+    ],
+    "expected": 646.5,
+    "metric": "The maximum daily revenue",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 116,
+    "kind": "scalar",
+    "keys": [
+      "Total NPV"
+    ],
+    "expected": 42000.0,
+    "metric": "Total NPV",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 117,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 10300.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 118,
+    "kind": "scalar",
+    "keys": [
+      "Profit Efficiency"
+    ],
+    "expected": 0.14,
+    "metric": "Profit Efficiency",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 119,
+    "kind": "scalar",
+    "keys": [
+      "Benefit-Risk Ratio"
+    ],
+    "expected": 2.4203881963074005,
+    "metric": "Benefit-Risk Ratio",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 120,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 3000.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 121,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 9666000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 122,
+    "kind": "scalar",
+    "keys": [
+      "The total time for the pool to be ready"
+    ],
+    "expected": 834.0,
+    "metric": "The total time for the pool to be ready",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 123,
+    "kind": "scalar",
+    "keys": [
+      "Total busing miles traveled"
+    ],
+    "expected": 21700.0,
+    "metric": "Total busing miles traveled",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 124,
+    "kind": "scalar",
+    "keys": [
+      "The minimum surface area of the box"
+    ],
+    "expected": 205.19711284322852,
+    "metric": "The minimum surface area of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 125,
+    "kind": "scalar",
+    "keys": [
+      "The total number of light bulbs produced"
+    ],
+    "expected": 21.0,
+    "metric": "The total number of light bulbs produced",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 126,
+    "kind": "scalar",
+    "keys": [
+      "Total production time"
+    ],
+    "expected": 0.0,
+    "metric": "Total production time",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 127,
+    "kind": "scalar",
+    "keys": [
+      "Total cost"
+    ],
+    "expected": 103960.0,
+    "metric": "Total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 128,
+    "kind": "scalar",
+    "keys": [
+      "Maximum profit per day"
+    ],
+    "expected": 1400.0,
+    "metric": "Maximum profit per day",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 129,
+    "kind": "scalar",
+    "keys": [
+      "The total units of green gas produced"
+    ],
+    "expected": 50.0,
+    "metric": "The total units of green gas produced",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 130,
+    "kind": "scalar",
+    "keys": [
+      "Total Net Profit"
+    ],
+    "expected": 180000.0,
+    "metric": "Total Net Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 131,
+    "kind": "scalar",
+    "keys": [
+      "Objective Value (Profit Rate)"
+    ],
+    "expected": 1116.0,
+    "metric": "Objective Value (Profit Rate)",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 132,
+    "kind": "scalar",
+    "keys": [
+      "The maximum annual income"
+    ],
+    "expected": 9647.0,
+    "metric": "The maximum annual income",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 133,
+    "kind": "scalar",
+    "keys": [
+      "The amount of material needed"
+    ],
+    "expected": 160.0,
+    "metric": "The amount of material needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 134,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 283200.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 135,
+    "kind": "scalar",
+    "keys": [
+      "The total time needed"
+    ],
+    "expected": 34.166666,
+    "metric": "The total time needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 136,
+    "kind": "scalar",
+    "keys": [
+      "The total cost"
+    ],
+    "expected": 7.0,
+    "metric": "The total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 137,
+    "kind": "scalar",
+    "keys": [
+      "The maximum area of the rectangle"
+    ],
+    "expected": 625.0,
+    "metric": "The maximum area of the rectangle",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 138,
+    "kind": "scalar",
+    "keys": [
+      "Total NPV"
+    ],
+    "expected": 42000.0,
+    "metric": "Total NPV",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 139,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of tea needed"
+    ],
+    "expected": 36.0,
+    "metric": "The total amount of tea needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 140,
+    "kind": "scalar",
+    "keys": [
+      "The maximum contribution to overhead"
+    ],
+    "expected": 1660.0,
+    "metric": "The maximum contribution to overhead",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 141,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 9500.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 142,
+    "kind": "scalar",
+    "keys": [
+      "The total number of bottles"
+    ],
+    "expected": 100.0,
+    "metric": "The total number of bottles",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 143,
+    "kind": "scalar",
+    "keys": [
+      "The minimum transportation cost"
+    ],
+    "expected": 10400.0,
+    "metric": "The minimum transportation cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 144,
+    "kind": "scalar",
+    "keys": [
+      "The minimum number of machines"
+    ],
+    "expected": 28.0,
+    "metric": "The minimum number of machines",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 145,
+    "kind": "scalar",
+    "keys": [
+      "The maximum total profit"
+    ],
+    "expected": 39975.0,
+    "metric": "The maximum total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 146,
+    "kind": "scalar",
+    "keys": [
+      "The minimum amount of material needed"
+    ],
+    "expected": 42.42143626839228,
+    "metric": "The minimum amount of material needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 147,
+    "kind": "scalar",
+    "keys": [
+      "Average Profit per Acre"
+    ],
+    "expected": 290.2173913043478,
+    "metric": "Average Profit per Acre",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 148,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 1656.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 149,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 15000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 150,
+    "kind": "scalar",
+    "keys": [
+      "The number of bikes needed"
+    ],
+    "expected": 80.0,
+    "metric": "The number of bikes needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 151,
+    "kind": "scalar",
+    "keys": [
+      "The total cost of the mix"
+    ],
+    "expected": 420.0,
+    "metric": "The total cost of the mix",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 152,
+    "kind": "scalar",
+    "keys": [
+      "The maximum annual income"
+    ],
+    "expected": 9647.0,
+    "metric": "The maximum annual income",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 153,
+    "kind": "scalar",
+    "keys": [
+      "The total number of grapes transported"
+    ],
+    "expected": 16500.0,
+    "metric": "The total number of grapes transported",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 154,
+    "kind": "scalar",
+    "keys": [
+      "The total cost is"
+    ],
+    "expected": 13.0,
+    "metric": "The total cost is",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 155,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 317.5,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 156,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 16000.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 157,
+    "kind": "scalar",
+    "keys": [
+      "Total donations"
+    ],
+    "expected": 1840.0,
+    "metric": "Total donations",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 158,
+    "kind": "scalar",
+    "keys": [
+      "Total Cost per Unit of Energy"
+    ],
+    "expected": 3.22077922077922,
+    "metric": "Total Cost per Unit of Energy",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 159,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 5050.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 160,
+    "kind": "scalar",
+    "keys": [
+      "The length of the rope required to rescue him"
+    ],
+    "expected": 12.041593987675089,
+    "metric": "The length of the rope required to rescue him",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 161,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 9000.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 162,
+    "kind": "scalar",
+    "keys": [
+      "Total number of machines needed"
+    ],
+    "expected": 7.0,
+    "metric": "Total number of machines needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 163,
+    "kind": "scalar",
+    "keys": [
+      "New maximum profit"
+    ],
+    "expected": 35000.0,
+    "metric": "New maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 164,
+    "kind": "scalar",
+    "keys": [
+      "The maximum total profit"
+    ],
+    "expected": 900000.0,
+    "metric": "The maximum total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 165,
+    "kind": "scalar",
+    "keys": [
+      "The number of regular vans",
+      "The number of hybrid vans"
+    ],
+    "expected": 60.0,
+    "metric": "sum_of_reference_counts",
+    "derivation": "题面优化总数：对原始参考中的这些数量求和。"
+  },
+  {
+    "id": 166,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 2400.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 167,
+    "kind": "scalar",
+    "keys": [
+      "The minimum amount of material needed"
+    ],
+    "expected": 129.26608058453235,
+    "metric": "The minimum amount of material needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 168,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 3000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 169,
+    "kind": "scalar",
+    "keys": [
+      "The total cost"
+    ],
+    "expected": 16.0,
+    "metric": "The total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 170,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 5000.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 171,
+    "kind": "scalar",
+    "keys": [
+      "Total profit per day"
+    ],
+    "expected": 10550.0,
+    "metric": "Total profit per day",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 172,
+    "kind": "scalar",
+    "keys": [
+      "Total radiation to the pancreas"
+    ],
+    "expected": 1.5,
+    "metric": "Total radiation to the pancreas",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 173,
+    "kind": "scalar",
+    "keys": [
+      "The total number of keyboards"
+    ],
+    "expected": 222.0,
+    "metric": "The total number of keyboards",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 174,
+    "kind": "scalar",
+    "keys": [
+      "The total number of vehicles"
+    ],
+    "expected": 30.0,
+    "metric": "The total number of vehicles",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 175,
+    "kind": "scalar",
+    "keys": [
+      "Total Utility"
+    ],
+    "expected": 291.0,
+    "metric": "Total Utility",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 176,
+    "kind": "scalar",
+    "keys": [
+      "Minimum Time to Meet Weekly Demand"
+    ],
+    "expected": 0.09523809523809523,
+    "metric": "Minimum Time to Meet Weekly Demand",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 177,
+    "kind": "scalar",
+    "keys": [
+      "Total cost"
+    ],
+    "expected": 103960.0,
+    "metric": "Total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 178,
+    "kind": "scalar",
+    "keys": [
+      "The minimum time needed to reach the island"
+    ],
+    "expected": 0.9553413988436567,
+    "metric": "The minimum time needed to reach the island",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 179,
+    "kind": "scalar",
+    "keys": [
+      "The area of the rectangle"
+    ],
+    "expected": 3.079201589017748,
+    "metric": "The area of the rectangle",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 180,
+    "kind": "scalar",
+    "keys": [
+      "The total wage bill"
+    ],
+    "expected": 72000.0,
+    "metric": "The total wage bill",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 181,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 133200.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 182,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 1070.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 183,
+    "kind": "scalar",
+    "keys": [
+      "Total Utility"
+    ],
+    "expected": 291.0,
+    "metric": "Total Utility",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 184,
+    "kind": "scalar",
+    "keys": [
+      "The minimized sum"
+    ],
+    "expected": 173.20508075688772,
+    "metric": "The minimized sum",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 185,
+    "kind": "scalar",
+    "keys": [
+      "Total revenue"
+    ],
+    "expected": 37000.0,
+    "metric": "Total revenue",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 186,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 80000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 187,
+    "kind": "scalar",
+    "keys": [
+      "Total wage bill"
+    ],
+    "expected": 150000.0,
+    "metric": "Total wage bill",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 188,
+    "kind": "scalar",
+    "keys": [
+      "The total units of space taken"
+    ],
+    "expected": 100.0,
+    "metric": "The total units of space taken",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 189,
+    "kind": "scalar",
+    "keys": [
+      "The minimum surface area of the box"
+    ],
+    "expected": 102.59855554521748,
+    "metric": "The minimum surface area of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 190,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 480.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 191,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 336.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 192,
+    "kind": "scalar",
+    "keys": [
+      "The total pollution produced"
+    ],
+    "expected": 175.0,
+    "metric": "The total pollution produced",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 193,
+    "kind": "scalar",
+    "keys": [
+      "The total production time (in minutes)"
+    ],
+    "expected": 6794.0,
+    "metric": "The total production time (in minutes)",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 194,
+    "kind": "scalar",
+    "keys": [
+      "Maximum profit"
+    ],
+    "expected": 325.0,
+    "metric": "Maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 195,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 15000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 196,
+    "kind": "scalar",
+    "keys": [
+      "The total number of customers attracted per hour"
+    ],
+    "expected": 670.0,
+    "metric": "The total number of customers attracted per hour",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 197,
+    "kind": "scalar",
+    "keys": [
+      "The maximum contribution to overhead"
+    ],
+    "expected": 1660.0,
+    "metric": "The maximum contribution to overhead",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 198,
+    "kind": "scalar",
+    "keys": [
+      "The total number of patients seen"
+    ],
+    "expected": 10820.0,
+    "metric": "The total number of patients seen",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 199,
+    "kind": "scalar",
+    "keys": [
+      "The total number of snacks transported"
+    ],
+    "expected": 4190.0,
+    "metric": "The total number of snacks transported",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 200,
+    "kind": "scalar",
+    "keys": [
+      "The maximum area of the play area"
+    ],
+    "expected": 1250.0,
+    "metric": "The maximum area of the play area",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 201,
+    "kind": "scalar",
+    "keys": [
+      "The minimum transportation cost"
+    ],
+    "expected": 10400.0,
+    "metric": "The minimum transportation cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 202,
+    "kind": "scalar",
+    "keys": [
+      "The maximum financial returns"
+    ],
+    "expected": 66.0,
+    "metric": "The maximum financial returns",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 203,
+    "kind": "scalar",
+    "keys": [
+      "Profit-Impact Ratio"
+    ],
+    "expected": 4.925000000000026,
+    "metric": "Profit-Impact Ratio",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 204,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 60000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 205,
+    "kind": "scalar",
+    "keys": [
+      "Total Cost per Ton-Kilometer"
+    ],
+    "expected": 500.0,
+    "metric": "Total Cost per Ton-Kilometer",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 206,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 37000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 207,
+    "kind": "scalar",
+    "keys": [
+      "The maximum weekly profit"
+    ],
+    "expected": 75.0,
+    "metric": "The maximum weekly profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 208,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 560.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 209,
+    "kind": "scalar",
+    "keys": [
+      "Total NPV"
+    ],
+    "expected": 42000.0,
+    "metric": "Total NPV",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 210,
+    "kind": "scalar",
+    "keys": [
+      "Total operation cost"
+    ],
+    "expected": 2750.0,
+    "metric": "Total operation cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 211,
+    "kind": "scalar",
+    "keys": [
+      "Total pollution produced"
+    ],
+    "expected": 670.0,
+    "metric": "Total pollution produced",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 212,
+    "kind": "scalar",
+    "keys": [
+      "The total number of units produced"
+    ],
+    "expected": 2287.0,
+    "metric": "The total number of units produced",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 213,
+    "kind": "scalar",
+    "keys": [
+      "The least possible cost"
+    ],
+    "expected": 4582.575694268464,
+    "metric": "The least possible cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 214,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 45500.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 215,
+    "kind": "scalar",
+    "keys": [
+      "The total number of jars used"
+    ],
+    "expected": 800.0,
+    "metric": "The total number of jars used",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 216,
+    "kind": "scalar",
+    "keys": [
+      "The total number of trips"
+    ],
+    "expected": 75.0,
+    "metric": "The total number of trips",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 217,
+    "kind": "scalar",
+    "keys": [
+      "The minimum number of courses needed"
+    ],
+    "expected": 4.0,
+    "metric": "The minimum number of courses needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 218,
+    "kind": "scalar",
+    "keys": [
+      "The maximum area of the pen"
+    ],
+    "expected": 10000.0,
+    "metric": "The maximum area of the pen",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 219,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost"
+    ],
+    "expected": 148.61089482,
+    "metric": "The minimum cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 220,
+    "kind": "scalar",
+    "keys": [
+      "The minimized sum"
+    ],
+    "expected": 173.20508075688772,
+    "metric": "The minimized sum",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 221,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 9666000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 222,
+    "kind": "scalar",
+    "keys": [
+      "The length of the rope required to rescue him"
+    ],
+    "expected": 0.35355235026576626,
+    "metric": "The length of the rope required to rescue him",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 223,
+    "kind": "scalar",
+    "keys": [
+      "Total Cost per Ton-Kilometer"
+    ],
+    "expected": 500.0,
+    "metric": "Total Cost per Ton-Kilometer",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 224,
+    "kind": "scalar",
+    "keys": [
+      "Minimum Production Time"
+    ],
+    "expected": 0.21052631578947364,
+    "metric": "Minimum Production Time",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 225,
+    "kind": "scalar",
+    "keys": [
+      "The total profit per day"
+    ],
+    "expected": 90000.0,
+    "metric": "The total profit per day",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 226,
+    "kind": "scalar",
+    "keys": [
+      "The area of the garden"
+    ],
+    "expected": 112.5,
+    "metric": "The area of the garden",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 227,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost"
+    ],
+    "expected": 65000.0,
+    "metric": "The minimum cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 228,
+    "kind": "scalar",
+    "keys": [
+      "Total Revenue"
+    ],
+    "expected": 833.0,
+    "metric": "Total Revenue",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 229,
+    "kind": "scalar",
+    "keys": [
+      "Average Net Profit per Team"
+    ],
+    "expected": 55333.33333333333,
+    "metric": "Average Net Profit per Team",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 230,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost of making the container"
+    ],
+    "expected": 41.84810349780642,
+    "metric": "The minimum cost of making the container",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 231,
+    "kind": "scalar",
+    "keys": [
+      "The total cost of production"
+    ],
+    "expected": 1500.0,
+    "metric": "The total cost of production",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 232,
+    "kind": "scalar",
+    "keys": [
+      "The total potassium intake"
+    ],
+    "expected": 0.0,
+    "metric": "The total potassium intake",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 233,
+    "kind": "scalar",
+    "keys": [
+      "The maximum area of the rectangle"
+    ],
+    "expected": 100.0,
+    "metric": "The maximum area of the rectangle",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 234,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 9500.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 235,
+    "kind": "scalar",
+    "keys": [
+      "Total Cost"
+    ],
+    "expected": 18000.0,
+    "metric": "Total Cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 236,
+    "kind": "scalar",
+    "keys": [
+      "Maximum profit"
+    ],
+    "expected": 17500.0,
+    "metric": "Maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 237,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 15000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 238,
+    "kind": "scalar",
+    "keys": [
+      "The amount of hay processed"
+    ],
+    "expected": 1800.0,
+    "metric": "The amount of hay processed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 239,
+    "kind": "scalar",
+    "keys": [
+      "The total mass that can be supported"
+    ],
+    "expected": 800.0,
+    "metric": "The total mass that can be supported",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 240,
+    "kind": "scalar",
+    "keys": [
+      "The maximum total value of the knapsack"
+    ],
+    "expected": 40.0,
+    "metric": "The maximum total value of the knapsack",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 241,
+    "kind": "scalar",
+    "keys": [
+      "Total busing miles traveled"
+    ],
+    "expected": 21700.0,
+    "metric": "Total busing miles traveled",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 242,
+    "kind": "scalar",
+    "keys": [
+      "Total earnings"
+    ],
+    "expected": 60000.0,
+    "metric": "Total earnings",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 243,
+    "kind": "scalar",
+    "keys": [
+      "The minimum amount of material needed"
+    ],
+    "expected": 129.26608058453235,
+    "metric": "The minimum amount of material needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 244,
+    "kind": "scalar",
+    "keys": [
+      "The total number of catered guests"
+    ],
+    "expected": 1080.0,
+    "metric": "The total number of catered guests",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 245,
+    "kind": "scalar",
+    "keys": [
+      "The maximum area of the play area"
+    ],
+    "expected": 1250.0,
+    "metric": "The maximum area of the play area",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 246,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 40000.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 247,
+    "kind": "scalar",
+    "keys": [
+      "The total number of vehicles"
+    ],
+    "expected": 19.0,
+    "metric": "The total number of vehicles",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 248,
+    "kind": "scalar",
+    "keys": [
+      "The total number of gifts delivered"
+    ],
+    "expected": 342.0,
+    "metric": "The total number of gifts delivered",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 249,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 1875.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 250,
+    "kind": "scalar",
+    "keys": [
+      "The total fat intake"
+    ],
+    "expected": 603.0,
+    "metric": "The total fat intake",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 251,
+    "kind": "scalar",
+    "keys": [
+      "The minimum effective time"
+    ],
+    "expected": 300.0,
+    "metric": "The minimum effective time",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 252,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 433.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 253,
+    "kind": "scalar",
+    "keys": [
+      "The total number of wagons needed"
+    ],
+    "expected": 67.0,
+    "metric": "The total number of wagons needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 254,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 40000.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 255,
+    "kind": "scalar",
+    "keys": [
+      "The total number of jars filled"
+    ],
+    "expected": 70.0,
+    "metric": "The total number of jars filled",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 256,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 395000.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 257,
+    "kind": "scalar",
+    "keys": [
+      "The maximum weekly profit"
+    ],
+    "expected": 75.0,
+    "metric": "The maximum weekly profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 258,
+    "kind": "scalar",
+    "keys": [
+      "The total number of workers"
+    ],
+    "expected": 29.0,
+    "metric": "The total number of workers",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 259,
+    "kind": "scalar",
+    "keys": [
+      "The total number of air conditioners"
+    ],
+    "expected": 15.0,
+    "metric": "The total number of air conditioners",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 260,
+    "kind": "scalar",
+    "keys": [
+      "The minimum amount of material needed"
+    ],
+    "expected": 42.42143626839228,
+    "metric": "The minimum amount of material needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 261,
+    "kind": "scalar",
+    "keys": [
+      "The maximum volume of the box"
+    ],
+    "expected": 29.047375266161364,
+    "metric": "The maximum volume of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 262,
+    "kind": "scalar",
+    "keys": [
+      "Profit Efficiency"
+    ],
+    "expected": 20.0,
+    "metric": "Profit Efficiency",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 263,
+    "kind": "scalar",
+    "keys": [
+      "Maximum Profit"
+    ],
+    "expected": 64000.0,
+    "metric": "Maximum Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 264,
+    "kind": "scalar",
+    "keys": [
+      "The profit"
+    ],
+    "expected": 511.42857200000003,
+    "metric": "The profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 265,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of curry base used"
+    ],
+    "expected": 17.0,
+    "metric": "The total amount of curry base used",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 266,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of carbon dioxide produced"
+    ],
+    "expected": 369.0,
+    "metric": "The total amount of carbon dioxide produced",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 267,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 224.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 268,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost of the metal to manufacture the jar"
+    ],
+    "expected": 5535.810442610608,
+    "metric": "The minimum cost of the metal to manufacture the jar",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 269,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit is"
+    ],
+    "expected": 79000.0,
+    "metric": "The maximum profit is",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 270,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 14325.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 271,
+    "kind": "scalar",
+    "keys": [
+      "The minimum time needed to reach the island"
+    ],
+    "expected": 0.9553413988436567,
+    "metric": "The minimum time needed to reach the island",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 272,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 2333.33333,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 273,
+    "kind": "scalar",
+    "keys": [
+      "The number of seasonings and spices stored"
+    ],
+    "expected": 600.0,
+    "metric": "The number of seasonings and spices stored",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 274,
+    "kind": "scalar",
+    "keys": [
+      "The total time it takes for the mixed bread to be ready"
+    ],
+    "expected": 61875.0,
+    "metric": "The total time it takes for the mixed bread to be ready",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 275,
+    "kind": "scalar",
+    "keys": [
+      "The total number of trips"
+    ],
+    "expected": 32.0,
+    "metric": "The total number of trips",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 276,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 369.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 277,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 80.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 278,
+    "kind": "scalar",
+    "keys": [
+      "The total number of coins that can be plated"
+    ],
+    "expected": 750.0,
+    "metric": "The total number of coins that can be plated",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 279,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 9666000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 280,
+    "kind": "scalar",
+    "keys": [
+      "The total number of crates produced"
+    ],
+    "expected": 13.0,
+    "metric": "The total number of crates produced",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 281,
+    "kind": "scalar",
+    "keys": [
+      "Total Daily Energy Output"
+    ],
+    "expected": 16666.666666666668,
+    "metric": "Total Daily Energy Output",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 282,
+    "kind": "scalar",
+    "keys": [
+      "The total number of branches"
+    ],
+    "expected": 12.0,
+    "metric": "The total number of branches",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 283,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 375.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 284,
+    "kind": "scalar",
+    "keys": [
+      "Total Utility"
+    ],
+    "expected": 40000.0,
+    "metric": "Total Utility",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 285,
+    "kind": "scalar",
+    "keys": [
+      "The total cost"
+    ],
+    "expected": 30.0,
+    "metric": "The total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 286,
+    "kind": "scalar",
+    "keys": [
+      "The total number of buses"
+    ],
+    "expected": 20.0,
+    "metric": "The total number of buses",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 287,
+    "kind": "scalar",
+    "keys": [
+      "The total time"
+    ],
+    "expected": 40.0,
+    "metric": "The total time",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 288,
+    "kind": "scalar",
+    "keys": [
+      "The total number of units that can be sold"
+    ],
+    "expected": 54.0,
+    "metric": "The total number of units that can be sold",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 289,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of special syrup used"
+    ],
+    "expected": 0.0,
+    "metric": "The total amount of special syrup used",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 290,
+    "kind": "scalar",
+    "keys": [
+      "The minimum number of workers needed is"
+    ],
+    "expected": 22.0,
+    "metric": "The minimum number of workers needed is",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 291,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit is"
+    ],
+    "expected": 1060.0,
+    "metric": "The maximum profit is",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 292,
+    "kind": "scalar",
+    "keys": [
+      "The maximum financial returns"
+    ],
+    "expected": 66.0,
+    "metric": "The maximum financial returns",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 293,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 290.5,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 294,
+    "kind": "scalar",
+    "keys": [
+      "The total sodium intake"
+    ],
+    "expected": 150.0,
+    "metric": "The total sodium intake",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 295,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 17400.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 296,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost of the mixture"
+    ],
+    "expected": 187.5,
+    "metric": "The minimum cost of the mixture",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 297,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 36.25,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 298,
+    "kind": "scalar",
+    "keys": [
+      "The surface area of the cylinder"
+    ],
+    "expected": 75.39822,
+    "metric": "The surface area of the cylinder",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 299,
+    "kind": "scalar",
+    "keys": [
+      "The minimum surface area of the box:"
+    ],
+    "expected": 287.7028115678059,
+    "metric": "The minimum surface area of the box:",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 300,
+    "kind": "scalar",
+    "keys": [
+      "The total time needed"
+    ],
+    "expected": 1000.0,
+    "metric": "The total time needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 301,
+    "kind": "scalar",
+    "keys": [
+      "The least possible cost"
+    ],
+    "expected": 4582.57569495584,
+    "metric": "The least possible cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 302,
+    "kind": "scalar",
+    "keys": [
+      "The total audience"
+    ],
+    "expected": 4000000.0,
+    "metric": "The total audience",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 303,
+    "kind": "scalar",
+    "keys": [
+      "The area of the garden"
+    ],
+    "expected": 1250.0,
+    "metric": "The area of the garden",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 304,
+    "kind": "scalar",
+    "keys": [
+      "Total cost"
+    ],
+    "expected": 3.0,
+    "metric": "Total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 305,
+    "kind": "scalar",
+    "keys": [
+      "Minimum Production Time"
+    ],
+    "expected": 0.21052631578947364,
+    "metric": "Minimum Production Time",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 306,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 6618.1818299999995,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 307,
+    "kind": "scalar",
+    "keys": [
+      "Total time required (seconds)"
+    ],
+    "expected": 200.0,
+    "metric": "Total time required (seconds)",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 308,
+    "kind": "scalar",
+    "keys": [
+      "The total revenue"
+    ],
+    "expected": 200.0,
+    "metric": "The total revenue",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 309,
+    "kind": "scalar",
+    "keys": [
+      "Total Net Profit"
+    ],
+    "expected": 10382.436,
+    "metric": "Total Net Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 310,
+    "kind": "scalar",
+    "keys": [
+      "The total cost"
+    ],
+    "expected": 5900.0,
+    "metric": "The total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 311,
+    "kind": "scalar",
+    "keys": [
+      "Total cost"
+    ],
+    "expected": 100000.0,
+    "metric": "Total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 312,
+    "kind": "scalar",
+    "keys": [
+      "The maximum volume of the box"
+    ],
+    "expected": 29.047375266161364,
+    "metric": "The maximum volume of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 313,
+    "kind": "scalar",
+    "keys": [
+      "The minimized cost"
+    ],
+    "expected": 1.2,
+    "metric": "The minimized cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 314,
+    "kind": "scalar",
+    "keys": [
+      "The total number of fire fighters"
+    ],
+    "expected": 40.0,
+    "metric": "The total number of fire fighters",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 315,
+    "kind": "scalar",
+    "keys": [
+      "The maximum light transmitted"
+    ],
+    "expected": 2.758572988826752,
+    "metric": "The maximum light transmitted",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 316,
+    "kind": "scalar",
+    "keys": [
+      "Total fuel consumed (liters)"
+    ],
+    "expected": 6300.0,
+    "metric": "Total fuel consumed (liters)",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 317,
+    "kind": "scalar",
+    "keys": [
+      "The total time needed to transport all the locals"
+    ],
+    "expected": 610.0,
+    "metric": "The total time needed to transport all the locals",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 318,
+    "kind": "scalar",
+    "keys": [
+      "Total number of drills needed"
+    ],
+    "expected": 22.0,
+    "metric": "Total number of drills needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 319,
+    "kind": "scalar",
+    "keys": [
+      "Minimum Production Time"
+    ],
+    "expected": 2.688172043010753,
+    "metric": "Minimum Production Time",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 320,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of gas consumed"
+    ],
+    "expected": 600.0,
+    "metric": "The total amount of gas consumed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 321,
+    "kind": "scalar",
+    "keys": [
+      "The number of cars processed per hour"
+    ],
+    "expected": 84.0,
+    "metric": "The number of cars processed per hour",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 322,
+    "kind": "scalar",
+    "keys": [
+      "The weekly cost of meeting demand is"
+    ],
+    "expected": 4750.0,
+    "metric": "The weekly cost of meeting demand is",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 323,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 15000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 324,
+    "kind": "scalar",
+    "keys": [
+      "The total number of staff hired"
+    ],
+    "expected": 40.0,
+    "metric": "The total number of staff hired",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 325,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost of the mixture"
+    ],
+    "expected": 327.65957199999997,
+    "metric": "The minimum cost of the mixture",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 326,
+    "kind": "scalar",
+    "keys": [
+      "Minimum Time to Meet Weekly Demand"
+    ],
+    "expected": 0.05263157894736842,
+    "metric": "Minimum Time to Meet Weekly Demand",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 327,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 10560.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 328,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 9210.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 329,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 9666000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 330,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 819.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 331,
+    "kind": "scalar",
+    "keys": [
+      "The cost of the mixture"
+    ],
+    "expected": 33.0,
+    "metric": "The cost of the mixture",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 332,
+    "kind": "scalar",
+    "keys": [
+      "The maximum volume of the cylinder"
+    ],
+    "expected": 2.418400326515517,
+    "metric": "The maximum volume of the cylinder",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 333,
+    "kind": "scalar",
+    "keys": [
+      "The total cost for the patient"
+    ],
+    "expected": 50.0,
+    "metric": "The total cost for the patient",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 334,
+    "kind": "scalar",
+    "keys": [
+      "The total number of vehicles"
+    ],
+    "expected": 19.0,
+    "metric": "The total number of vehicles",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 335,
+    "kind": "scalar",
+    "keys": [
+      "The total liters of glacial water transported"
+    ],
+    "expected": 1480.0,
+    "metric": "The total liters of glacial water transported",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 336,
+    "kind": "scalar",
+    "keys": [
+      "The total revenue generated"
+    ],
+    "expected": 4077.0,
+    "metric": "The total revenue generated",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 337,
+    "kind": "scalar",
+    "keys": [
+      "Total number of ski lifts"
+    ],
+    "expected": 25.0,
+    "metric": "Total number of ski lifts",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 338,
+    "kind": "scalar",
+    "keys": [
+      "Total daily Energy Output"
+    ],
+    "expected": 50000.0,
+    "metric": "Total daily Energy Output",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 339,
+    "kind": "scalar",
+    "keys": [
+      "The cost of the diet"
+    ],
+    "expected": 20.0,
+    "metric": "The cost of the diet",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 340,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of diesel used"
+    ],
+    "expected": 580.0,
+    "metric": "The total amount of diesel used",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 341,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost of the metal to manufacture the jar"
+    ],
+    "expected": 5535.810442610608,
+    "metric": "The minimum cost of the metal to manufacture the jar",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 342,
+    "kind": "scalar",
+    "keys": [
+      "The amount of crepe mix used"
+    ],
+    "expected": 20.0,
+    "metric": "The amount of crepe mix used",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 343,
+    "kind": "scalar",
+    "keys": [
+      "The maximum volume of the box"
+    ],
+    "expected": 0.02405645428965656,
+    "metric": "The maximum volume of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 344,
+    "kind": "scalar",
+    "keys": [
+      "Total Utility"
+    ],
+    "expected": 40000.0,
+    "metric": "Total Utility",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 345,
+    "kind": "scalar",
+    "keys": [
+      "The total number of pipes"
+    ],
+    "expected": 52.0,
+    "metric": "The total number of pipes",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 346,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 550.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 347,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 11980.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 348,
+    "kind": "scalar",
+    "keys": [
+      "The total number of trips"
+    ],
+    "expected": 64.0,
+    "metric": "The total number of trips",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 349,
+    "kind": "scalar",
+    "keys": [
+      "The maximum volume of the box"
+    ],
+    "expected": 11664.0,
+    "metric": "The maximum volume of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 350,
+    "kind": "scalar",
+    "keys": [
+      "The minimum number of workers required"
+    ],
+    "expected": 100.0,
+    "metric": "The minimum number of workers required",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 351,
+    "kind": "scalar",
+    "keys": [
+      "The amount of carbon dioxide converted"
+    ],
+    "expected": 98.0,
+    "metric": "The amount of carbon dioxide converted",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 352,
+    "kind": "scalar",
+    "keys": [
+      "Profit Efficiency"
+    ],
+    "expected": 15.0,
+    "metric": "Profit Efficiency",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 353,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 16000.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 354,
+    "kind": "scalar",
+    "keys": [
+      "Profit-Risk Ratio"
+    ],
+    "expected": 83.33333333333337,
+    "metric": "Profit-Risk Ratio",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 355,
+    "kind": "scalar",
+    "keys": [
+      "Minimum Production Time"
+    ],
+    "expected": 2.1818181818181817,
+    "metric": "Minimum Production Time",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 356,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 166.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 357,
+    "kind": "scalar",
+    "keys": [
+      "The total number of transportation units"
+    ],
+    "expected": 11.0,
+    "metric": "The total number of transportation units",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 358,
+    "kind": "scalar",
+    "keys": [
+      "The total number of probes used"
+    ],
+    "expected": 1001.0,
+    "metric": "The total number of probes used",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 359,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 2304500.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 360,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of mail delivered"
+    ],
+    "expected": 310.0,
+    "metric": "The total amount of mail delivered",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 361,
+    "kind": "scalar",
+    "keys": [
+      "The total sugar intake from packs"
+    ],
+    "expected": 390.0,
+    "metric": "The total sugar intake from packs",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 362,
+    "kind": "scalar",
+    "keys": [
+      "Total donations"
+    ],
+    "expected": 1840.0,
+    "metric": "Total donations",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 363,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit per day"
+    ],
+    "expected": 10560.0,
+    "metric": "Total Profit per day",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 364,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost"
+    ],
+    "expected": 23.5,
+    "metric": "The minimum cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 365,
+    "kind": "scalar",
+    "keys": [
+      "The number of cars"
+    ],
+    "expected": 37.0,
+    "metric": "The number of cars",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 366,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of recycling material collected"
+    ],
+    "expected": 1215.0,
+    "metric": "The total amount of recycling material collected",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 367,
+    "kind": "scalar",
+    "keys": [
+      "The total number of factories"
+    ],
+    "expected": 25.0,
+    "metric": "The total number of factories",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 368,
+    "kind": "scalar",
+    "keys": [
+      "The total monthly profit"
+    ],
+    "expected": 2500.0,
+    "metric": "The total monthly profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 369,
+    "kind": "scalar",
+    "keys": [
+      "The net revenue"
+    ],
+    "expected": 7000.0,
+    "metric": "The net revenue",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 370,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 24700.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 371,
+    "kind": "scalar",
+    "keys": [
+      "Total Utility"
+    ],
+    "expected": 1000.0,
+    "metric": "Total Utility",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 372,
+    "kind": "scalar",
+    "keys": [
+      "The total time to transport the patients"
+    ],
+    "expected": 24.0,
+    "metric": "The total time to transport the patients",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 373,
+    "kind": "scalar",
+    "keys": [
+      "Average Net Profit per Team"
+    ],
+    "expected": 52948.71794871795,
+    "metric": "Average Net Profit per Team",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 374,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 4900.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 375,
+    "kind": "scalar",
+    "keys": [
+      "Total amount of filler material used"
+    ],
+    "expected": 350.0,
+    "metric": "Total amount of filler material used",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 376,
+    "kind": "scalar",
+    "keys": [
+      "The maximum total profit"
+    ],
+    "expected": 39975.0,
+    "metric": "The maximum total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 377,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 42666.666,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 378,
+    "kind": "scalar",
+    "keys": [
+      "The total time required to transport the monkeys (minutes)"
+    ],
+    "expected": 555.0,
+    "metric": "The total time required to transport the monkeys (minutes)",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 379,
+    "kind": "scalar",
+    "keys": [
+      "Objective Value (Profit Rate)"
+    ],
+    "expected": 1116.0,
+    "metric": "Objective Value (Profit Rate)",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 380,
+    "kind": "scalar",
+    "keys": [
+      "The total tips received"
+    ],
+    "expected": 1965.0,
+    "metric": "The total tips received",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 381,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of pain killer needed"
+    ],
+    "expected": 291.4,
+    "metric": "The total amount of pain killer needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 382,
+    "kind": "scalar",
+    "keys": [
+      "The minimum number of ships needed"
+    ],
+    "expected": 9.0,
+    "metric": "The minimum number of ships needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 383,
+    "kind": "scalar",
+    "keys": [
+      "Total Revenue"
+    ],
+    "expected": 833.0,
+    "metric": "Total Revenue",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 384,
+    "kind": "scalar",
+    "keys": [
+      "The maximum light transmitted"
+    ],
+    "expected": 2.758572988826752,
+    "metric": "The maximum light transmitted",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 385,
+    "kind": "scalar",
+    "keys": [
+      "Total cost of operation"
+    ],
+    "expected": 766.666668,
+    "metric": "Total cost of operation",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 386,
+    "kind": "scalar",
+    "keys": [
+      "The maximum volume of the box"
+    ],
+    "expected": 2030.3362935990522,
+    "metric": "The maximum volume of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 387,
+    "kind": "scalar",
+    "keys": [
+      "The number of newspapers delivered"
+    ],
+    "expected": 2500.0,
+    "metric": "The number of newspapers delivered",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 388,
+    "kind": "scalar",
+    "keys": [
+      "The length of the side of the square base",
+      "The height of the box"
+    ],
+    "expected": 171.43931313635517,
+    "metric": "open_box_surface_area",
+    "derivation": "题面优化无盖方底箱表面积：side^2 + 4*side*height；用参考尺寸计算。"
+  },
+  {
+    "id": 389,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 6750.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 390,
+    "kind": "scalar",
+    "keys": [
+      "The total number of boxes"
+    ],
+    "expected": 26.0,
+    "metric": "The total number of boxes",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 391,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 2304500.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 392,
+    "kind": "scalar",
+    "keys": [
+      "The total number of trips"
+    ],
+    "expected": 26.0,
+    "metric": "The total number of trips",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 393,
+    "kind": "scalar",
+    "keys": [
+      "The area of the rectangle"
+    ],
+    "expected": 3.079201589017748,
+    "metric": "The area of the rectangle",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 394,
+    "kind": "scalar",
+    "keys": [
+      "Total NPV"
+    ],
+    "expected": 42000.0,
+    "metric": "Total NPV",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 395,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost"
+    ],
+    "expected": 65000.0,
+    "metric": "The minimum cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 396,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 9500.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 397,
+    "kind": "scalar",
+    "keys": [
+      "The maximum weekly profit"
+    ],
+    "expected": 75.0,
+    "metric": "The maximum weekly profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 398,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 200000.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 399,
+    "kind": "scalar",
+    "keys": [
+      "The total production time in minutes"
+    ],
+    "expected": 0.0,
+    "metric": "The total production time in minutes",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 400,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 6618.1818299999995,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 401,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 433.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 402,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of time"
+    ],
+    "expected": 1160.0,
+    "metric": "The total amount of time",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 403,
+    "kind": "scalar",
+    "keys": [
+      "The total number of trips"
+    ],
+    "expected": 8.0,
+    "metric": "The total number of trips",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 404,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 960.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 405,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 342750.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 406,
+    "kind": "scalar",
+    "keys": [
+      "Average Profit per Acre"
+    ],
+    "expected": 290.2173913043478,
+    "metric": "Average Profit per Acre",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 407,
+    "kind": "scalar",
+    "keys": [
+      "The amount of rice transported"
+    ],
+    "expected": 960.0,
+    "metric": "The amount of rice transported",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 408,
+    "kind": "scalar",
+    "keys": [
+      "Total Daily Energy Output"
+    ],
+    "expected": 16666.666666666668,
+    "metric": "Total Daily Energy Output",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 409,
+    "kind": "scalar",
+    "keys": [
+      "Minimum Time to Meet Weekly Demand"
+    ],
+    "expected": 0.05263157894736842,
+    "metric": "Minimum Time to Meet Weekly Demand",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 410,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 4900.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 411,
+    "kind": "scalar",
+    "keys": [
+      "The total number of metal-working equipment"
+    ],
+    "expected": 72.0,
+    "metric": "The total number of metal-working equipment",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 412,
+    "kind": "scalar",
+    "keys": [
+      "Total audience reached"
+    ],
+    "expected": 46000.0,
+    "metric": "Total audience reached",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 413,
+    "kind": "scalar",
+    "keys": [
+      "The product of the two numbers"
+    ],
+    "expected": 22500.0,
+    "metric": "The product of the two numbers",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 414,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 550.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 415,
+    "kind": "scalar",
+    "keys": [
+      "The maximum volume of the cone"
+    ],
+    "expected": 3.224532575115765,
+    "metric": "The maximum volume of the cone",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 416,
+    "kind": "scalar",
+    "keys": [
+      "The maximum value of x1 + x2"
+    ],
+    "expected": 5.0,
+    "metric": "The maximum value of x1 + x2",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 417,
+    "kind": "scalar",
+    "keys": [
+      "The minimum number of courses needed"
+    ],
+    "expected": 4.0,
+    "metric": "The minimum number of courses needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 418,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 425000.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 419,
+    "kind": "scalar",
+    "keys": [
+      "The total production of oil"
+    ],
+    "expected": 1125.0,
+    "metric": "The total production of oil",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 420,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 77500.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 421,
+    "kind": "scalar",
+    "keys": [
+      "The minimum production cost"
+    ],
+    "expected": 2910.0,
+    "metric": "The minimum production cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 422,
+    "kind": "scalar",
+    "keys": [
+      "Total Cost"
+    ],
+    "expected": 10000.0,
+    "metric": "Total Cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 423,
+    "kind": "scalar",
+    "keys": [
+      "The total number of boats used"
+    ],
+    "expected": 89.0,
+    "metric": "The total number of boats used",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 424,
+    "kind": "scalar",
+    "keys": [
+      "The total number of refills per hour"
+    ],
+    "expected": 330.0,
+    "metric": "The total number of refills per hour",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 425,
+    "kind": "scalar",
+    "keys": [
+      "The total hours required"
+    ],
+    "expected": 143.0,
+    "metric": "The total hours required",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 426,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 29950.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 427,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 10560.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 428,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 217.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 429,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 4990.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 430,
+    "kind": "scalar",
+    "keys": [
+      "The amount of honey transported"
+    ],
+    "expected": 1990.0,
+    "metric": "The amount of honey transported",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 431,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 4400.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 432,
+    "kind": "scalar",
+    "keys": [
+      "Max Profit Rate"
+    ],
+    "expected": 4.5550611790878754,
+    "metric": "Max Profit Rate",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 433,
+    "kind": "scalar",
+    "keys": [
+      "The total number of animals used"
+    ],
+    "expected": 29.0,
+    "metric": "The total number of animals used",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 434,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 364.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 435,
+    "kind": "scalar",
+    "keys": [
+      "The surface area of the cylinder"
+    ],
+    "expected": 75.39822,
+    "metric": "The surface area of the cylinder",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 436,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 12800.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 437,
+    "kind": "scalar",
+    "keys": [
+      "Profit Efficiency"
+    ],
+    "expected": 0.14,
+    "metric": "Profit Efficiency",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 438,
+    "kind": "scalar",
+    "keys": [
+      "Cost-Impact Ratio"
+    ],
+    "expected": 125.0,
+    "metric": "Cost-Impact Ratio",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 439,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost"
+    ],
+    "expected": 130.0,
+    "metric": "The minimum cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 440,
+    "kind": "scalar",
+    "keys": [
+      "Total Revenue"
+    ],
+    "expected": 1102500.0,
+    "metric": "Total Revenue",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 441,
+    "kind": "scalar",
+    "keys": [
+      "The total number of planes"
+    ],
+    "expected": 16.0,
+    "metric": "The total number of planes",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 442,
+    "kind": "scalar",
+    "keys": [
+      "Max Profit Rate"
+    ],
+    "expected": 4.5550611790878754,
+    "metric": "Max Profit Rate",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 443,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 560.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 444,
+    "kind": "scalar",
+    "keys": [
+      "The minimum surface area of the box"
+    ],
+    "expected": 171.43931313635517,
+    "metric": "The minimum surface area of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 445,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit you can make"
+    ],
+    "expected": 37000.0,
+    "metric": "The maximum profit you can make",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 446,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 450.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 447,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost of the container"
+    ],
+    "expected": 152.3236937205567,
+    "metric": "The minimum cost of the container",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 448,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 364.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 449,
+    "kind": "scalar",
+    "keys": [
+      "The total number of teachers"
+    ],
+    "expected": 268.0,
+    "metric": "The total number of teachers",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 450,
+    "kind": "scalar",
+    "keys": [
+      "Total Net Profit"
+    ],
+    "expected": 180000.0,
+    "metric": "Total Net Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 451,
+    "kind": "scalar",
+    "keys": [
+      "The total time spent baking"
+    ],
+    "expected": 10060.0,
+    "metric": "The total time spent baking",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 452,
+    "kind": "scalar",
+    "keys": [
+      "The number of potato packages transported"
+    ],
+    "expected": 7080.0,
+    "metric": "The number of potato packages transported",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 453,
+    "kind": "scalar",
+    "keys": [
+      "The total wage bill"
+    ],
+    "expected": 30200.0,
+    "metric": "The total wage bill",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 454,
+    "kind": "scalar",
+    "keys": [
+      "The maximum revenue"
+    ],
+    "expected": 28125.0,
+    "metric": "The maximum revenue",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 455,
+    "kind": "scalar",
+    "keys": [
+      "The amount of sand delivered"
+    ],
+    "expected": 1760.0,
+    "metric": "The amount of sand delivered",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 456,
+    "kind": "scalar",
+    "keys": [
+      "The total caloric intake"
+    ],
+    "expected": 0.0,
+    "metric": "The total caloric intake",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 457,
+    "kind": "scalar",
+    "keys": [
+      "The total number of concerts"
+    ],
+    "expected": 65.0,
+    "metric": "The total number of concerts",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 458,
+    "kind": "scalar",
+    "keys": [
+      "The minimum perimeter of the rectangle"
+    ],
+    "expected": 40.0,
+    "metric": "The minimum perimeter of the rectangle",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 459,
+    "kind": "scalar",
+    "keys": [
+      "The total number of parking spots required"
+    ],
+    "expected": 35.0,
+    "metric": "The total number of parking spots required",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 460,
+    "kind": "scalar",
+    "keys": [
+      "The minimum area of paper used"
+    ],
+    "expected": 164.5685424949238,
+    "metric": "The minimum area of paper used",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 461,
+    "kind": "scalar",
+    "keys": [
+      "The total time needed"
+    ],
+    "expected": 430.0,
+    "metric": "The total time needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 462,
+    "kind": "scalar",
+    "keys": [
+      "The total sugar intake"
+    ],
+    "expected": 456.0,
+    "metric": "The total sugar intake",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 463,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 6000.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 464,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of gas used"
+    ],
+    "expected": 310.0,
+    "metric": "The total amount of gas used",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 465,
+    "kind": "scalar",
+    "keys": [
+      "The total number of containers and trucks"
+    ],
+    "expected": 60.0,
+    "metric": "The total number of containers and trucks",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 466,
+    "kind": "scalar",
+    "keys": [
+      "The maximum area of the pen"
+    ],
+    "expected": 80000.0,
+    "metric": "The maximum area of the pen",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 467,
+    "kind": "scalar",
+    "keys": [
+      "Benefit-to-Cost Ratio"
+    ],
+    "expected": 0.0022121212121212126,
+    "metric": "Benefit-to-Cost Ratio",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 468,
+    "kind": "scalar",
+    "keys": [
+      "The amount of paste produced"
+    ],
+    "expected": 950.0,
+    "metric": "The amount of paste produced",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 469,
+    "kind": "scalar",
+    "keys": [
+      "Total amount of pollution produced"
+    ],
+    "expected": 120.0,
+    "metric": "Total amount of pollution produced",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 470,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 425000.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 471,
+    "kind": "scalar",
+    "keys": [
+      "The total cost of the diet"
+    ],
+    "expected": 22.0,
+    "metric": "The total cost of the diet",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 472,
+    "kind": "scalar",
+    "keys": [
+      "The minimum possible exterior surface area of the aquarium"
+    ],
+    "expected": 75.0,
+    "metric": "The minimum possible exterior surface area of the aquarium",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 473,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 540.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 474,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 785.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 475,
+    "kind": "scalar",
+    "keys": [
+      "The number of scooters"
+    ],
+    "expected": 75.0,
+    "metric": "The number of scooters",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 476,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of lawn that can be mowed"
+    ],
+    "expected": 2480.0,
+    "metric": "The total amount of lawn that can be mowed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 477,
+    "kind": "scalar",
+    "keys": [
+      "The optimal number of fire stations to be built is"
+    ],
+    "expected": 2.0,
+    "metric": "The optimal number of fire stations to be built is",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 478,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cholesterol intake"
+    ],
+    "expected": 160.0,
+    "metric": "The minimum cholesterol intake",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 479,
+    "kind": "scalar",
+    "keys": [
+      "The total number of vehicles"
+    ],
+    "expected": 14.0,
+    "metric": "The total number of vehicles",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 480,
+    "kind": "scalar",
+    "keys": [
+      "Average Net Profit per Team"
+    ],
+    "expected": 52948.71794871795,
+    "metric": "Average Net Profit per Team",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 481,
+    "kind": "scalar",
+    "keys": [
+      "The maximum number of exposures"
+    ],
+    "expected": 146000.0,
+    "metric": "The maximum number of exposures",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 482,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit from the investment"
+    ],
+    "expected": 340.0,
+    "metric": "The maximum profit from the investment",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 483,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit per Hour"
+    ],
+    "expected": 7.574999999999999,
+    "metric": "Total Profit per Hour",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 484,
+    "kind": "scalar",
+    "keys": [
+      "The total revenue generated"
+    ],
+    "expected": 4077.0,
+    "metric": "The total revenue generated",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 485,
+    "kind": "scalar",
+    "keys": [
+      "The minimum number of courses needed"
+    ],
+    "expected": 4.0,
+    "metric": "The minimum number of courses needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 486,
+    "kind": "scalar",
+    "keys": [
+      "Benefit-to-Cost Ratio"
+    ],
+    "expected": 0.0022121212121212126,
+    "metric": "Benefit-to-Cost Ratio",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 487,
+    "kind": "scalar",
+    "keys": [
+      "Total Efficiency Score"
+    ],
+    "expected": 949.163898708422,
+    "metric": "Total Efficiency Score",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 488,
+    "kind": "scalar",
+    "keys": [
+      "The maximum overall net profit"
+    ],
+    "expected": 3300.0,
+    "metric": "The maximum overall net profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 489,
+    "kind": "scalar",
+    "keys": [
+      "The amount of material needed"
+    ],
+    "expected": 160.0,
+    "metric": "The amount of material needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 490,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit per day"
+    ],
+    "expected": 1500.0,
+    "metric": "Total Profit per day",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 491,
+    "kind": "scalar",
+    "keys": [
+      "The optimal number of fire stations to be built is"
+    ],
+    "expected": 2.0,
+    "metric": "The optimal number of fire stations to be built is",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 492,
+    "kind": "scalar",
+    "keys": [
+      "The total cost of the mix"
+    ],
+    "expected": 420.0,
+    "metric": "The total cost of the mix",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 493,
+    "kind": "scalar",
+    "keys": [
+      "The total cost"
+    ],
+    "expected": 16666.667,
+    "metric": "The total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 494,
+    "kind": "scalar",
+    "keys": [
+      "The number of vans used"
+    ],
+    "expected": 14.0,
+    "metric": "The number of vans used",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 495,
+    "kind": "scalar",
+    "keys": [
+      "The total cost"
+    ],
+    "expected": 5900.0,
+    "metric": "The total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 496,
+    "kind": "scalar",
+    "keys": [
+      "The number of people that can be treated"
+    ],
+    "expected": 214.0,
+    "metric": "The number of people that can be treated",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 497,
+    "kind": "scalar",
+    "keys": [
+      "The maximum revenue that can be generated"
+    ],
+    "expected": 206250.0,
+    "metric": "The maximum revenue that can be generated",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 498,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 1625.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 499,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 80.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 500,
+    "kind": "scalar",
+    "keys": [
+      "The area of the garden"
+    ],
+    "expected": 112.5,
+    "metric": "The area of the garden",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 501,
+    "kind": "scalar",
+    "keys": [
+      "The maximum number of exposures"
+    ],
+    "expected": 146000.0,
+    "metric": "The maximum number of exposures",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 502,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost"
+    ],
+    "expected": 148.61089482,
+    "metric": "The minimum cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 503,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 648.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 504,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 200000.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 505,
+    "kind": "scalar",
+    "keys": [
+      "Profit-Risk Ratio"
+    ],
+    "expected": 83.33333333333337,
+    "metric": "Profit-Risk Ratio",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 506,
+    "kind": "scalar",
+    "keys": [
+      "Profit per Square Meter"
+    ],
+    "expected": 8.0,
+    "metric": "Profit per Square Meter",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 507,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of water required"
+    ],
+    "expected": 300.0,
+    "metric": "The total amount of water required",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 508,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 80.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 509,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 60000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 510,
+    "kind": "scalar",
+    "keys": [
+      "Total Utility"
+    ],
+    "expected": 1000.0,
+    "metric": "Total Utility",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 511,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 176.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 512,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 81000.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 513,
+    "kind": "scalar",
+    "keys": [
+      "The minimum surface area of the box:"
+    ],
+    "expected": 287.7028115678059,
+    "metric": "The minimum surface area of the box:",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 514,
+    "kind": "scalar",
+    "keys": [
+      "Total Cost"
+    ],
+    "expected": 10000.0,
+    "metric": "Total Cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 515,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 11666.666650000001,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 516,
+    "kind": "scalar",
+    "keys": [
+      "The maximum water-carrying capacity"
+    ],
+    "expected": 314.8801297874825,
+    "metric": "The maximum water-carrying capacity",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 517,
+    "kind": "scalar",
+    "keys": [
+      "The maximum exposure"
+    ],
+    "expected": 147000.0,
+    "metric": "The maximum exposure",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 518,
+    "kind": "scalar",
+    "keys": [
+      "The number of chickens transported"
+    ],
+    "expected": 8800.0,
+    "metric": "The number of chickens transported",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 519,
+    "kind": "scalar",
+    "keys": [
+      "The minimum possible exterior surface area of the aquarium"
+    ],
+    "expected": 75.0,
+    "metric": "The minimum possible exterior surface area of the aquarium",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 520,
+    "kind": "scalar",
+    "keys": [
+      "Total cost"
+    ],
+    "expected": 32.0,
+    "metric": "Total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 521,
+    "kind": "scalar",
+    "keys": [
+      "The total weight of grain transported"
+    ],
+    "expected": 620.0,
+    "metric": "The total weight of grain transported",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 522,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 50.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 523,
+    "kind": "scalar",
+    "keys": [
+      "Total number of pipes"
+    ],
+    "expected": 25.0,
+    "metric": "Total number of pipes",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 524,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 686.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 525,
+    "kind": "scalar",
+    "keys": [
+      "Total Efficiency Score"
+    ],
+    "expected": 949.163898708422,
+    "metric": "Total Efficiency Score",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 526,
+    "kind": "scalar",
+    "keys": [
+      "The maximum volume of the cylinder"
+    ],
+    "expected": 2.418400326515517,
+    "metric": "The maximum volume of the cylinder",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 527,
+    "kind": "scalar",
+    "keys": [
+      "Total amount of pollution produced"
+    ],
+    "expected": 260.0,
+    "metric": "Total amount of pollution produced",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 528,
+    "kind": "scalar",
+    "keys": [
+      "The total cost"
+    ],
+    "expected": 20.0,
+    "metric": "The total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 529,
+    "kind": "scalar",
+    "keys": [
+      "The total number of trips"
+    ],
+    "expected": 24.0,
+    "metric": "The total number of trips",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 530,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit per day"
+    ],
+    "expected": 1500.0,
+    "metric": "Total Profit per day",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 531,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 60.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 532,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 2400.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 533,
+    "kind": "scalar",
+    "keys": [
+      "The total number of patients that can be treated"
+    ],
+    "expected": 633.0,
+    "metric": "The total number of patients that can be treated",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 534,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 450.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 535,
+    "kind": "scalar",
+    "keys": [
+      "The amount of snow transported"
+    ],
+    "expected": 770.0,
+    "metric": "The amount of snow transported",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 536,
+    "kind": "scalar",
+    "keys": [
+      "Net profit"
+    ],
+    "expected": 37.5,
+    "metric": "Net profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 537,
+    "kind": "scalar",
+    "keys": [
+      "The maximum area of the pen"
+    ],
+    "expected": 10000.0,
+    "metric": "The maximum area of the pen",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 538,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 95000.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 539,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit per Hour"
+    ],
+    "expected": 7.574999999999999,
+    "metric": "Total Profit per Hour",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 540,
+    "kind": "scalar",
+    "keys": [
+      "Total radiation received"
+    ],
+    "expected": 0.0,
+    "metric": "Total radiation received",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 541,
+    "kind": "scalar",
+    "keys": [
+      "The total units of fruit required"
+    ],
+    "expected": 0.0,
+    "metric": "The total units of fruit required",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 542,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 4900.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 543,
+    "kind": "scalar",
+    "keys": [
+      "The number of tricks performed"
+    ],
+    "expected": 71.0,
+    "metric": "The number of tricks performed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 544,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 128000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 545,
+    "kind": "scalar",
+    "keys": [
+      "Profit per Square Meter"
+    ],
+    "expected": 8.0,
+    "metric": "Profit per Square Meter",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 546,
+    "kind": "scalar",
+    "keys": [
+      "The number of ultrasound technicians",
+      "The number of graduate researchers"
+    ],
+    "expected": 13.0,
+    "metric": "sum_of_reference_counts",
+    "derivation": "题面优化总数：对原始参考中的这些数量求和。"
+  },
+  {
+    "id": 547,
+    "kind": "scalar",
+    "keys": [
+      "Profit-Impact Ratio"
+    ],
+    "expected": 4.925000000000026,
+    "metric": "Profit-Impact Ratio",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 548,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 128000.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 549,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 364.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 550,
+    "kind": "scalar",
+    "keys": [
+      "The maximum total value of the knapsack"
+    ],
+    "expected": 40.0,
+    "metric": "The maximum total value of the knapsack",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 551,
+    "kind": "scalar",
+    "keys": [
+      "The total viewers reached"
+    ],
+    "expected": 6220000.0,
+    "metric": "The total viewers reached",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 552,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 310.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 553,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 2190.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 554,
+    "kind": "scalar",
+    "keys": [
+      "The minimum surface area of the box"
+    ],
+    "expected": 205.19711284322852,
+    "metric": "The minimum surface area of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 555,
+    "kind": "scalar",
+    "keys": [
+      "The total fat intake"
+    ],
+    "expected": 118.0,
+    "metric": "The total fat intake",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 556,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost of the box"
+    ],
+    "expected": 600.0,
+    "metric": "The minimum cost of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 557,
+    "kind": "scalar",
+    "keys": [
+      "The maximum total output of watermelons"
+    ],
+    "expected": 625.0,
+    "metric": "The maximum total output of watermelons",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 558,
+    "kind": "scalar",
+    "keys": [
+      "The seating availability"
+    ],
+    "expected": 40.0,
+    "metric": "The seating availability",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 559,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit per day"
+    ],
+    "expected": 10560.0,
+    "metric": "Total Profit per day",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 560,
+    "kind": "scalar",
+    "keys": [
+      "The total monthly profit"
+    ],
+    "expected": 6000.0,
+    "metric": "The total monthly profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 561,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 150000.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 562,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 364.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 563,
+    "kind": "scalar",
+    "keys": [
+      "The maximum volume of the cylinder"
+    ],
+    "expected": 27.14458472592633,
+    "metric": "The maximum volume of the cylinder",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 564,
+    "kind": "scalar",
+    "keys": [
+      "Total Revenue"
+    ],
+    "expected": 1102500.0,
+    "metric": "Total Revenue",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 565,
+    "kind": "scalar",
+    "keys": [
+      "Cost-Impact Ratio"
+    ],
+    "expected": 125.0,
+    "metric": "Cost-Impact Ratio",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 566,
+    "kind": "scalar",
+    "keys": [
+      "The minimum additional price per dish"
+    ],
+    "expected": 0.07051091035,
+    "metric": "The minimum additional price per dish",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 567,
+    "kind": "scalar",
+    "keys": [
+      "The minimum additional price per dish"
+    ],
+    "expected": 0.07051091035,
+    "metric": "The minimum additional price per dish",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 568,
+    "kind": "scalar",
+    "keys": [
+      "The total number of light changes"
+    ],
+    "expected": 990.0,
+    "metric": "The total number of light changes",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 569,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 400000.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 570,
+    "kind": "scalar",
+    "keys": [
+      "The total cost"
+    ],
+    "expected": 30.0,
+    "metric": "The total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 571,
+    "kind": "scalar",
+    "keys": [
+      "The total number of stores"
+    ],
+    "expected": 6.0,
+    "metric": "The total number of stores",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 572,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 260.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 573,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 686.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 574,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 2850.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 575,
+    "kind": "scalar",
+    "keys": [
+      "The total cost of the candies"
+    ],
+    "expected": 4.6,
+    "metric": "The total cost of the candies",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 576,
+    "kind": "scalar",
+    "keys": [
+      "The minimum surface area of the box"
+    ],
+    "expected": 102.59855554521748,
+    "metric": "The minimum surface area of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 577,
+    "kind": "scalar",
+    "keys": [
+      "The total number of tests performed"
+    ],
+    "expected": 316.0,
+    "metric": "The total number of tests performed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 578,
+    "kind": "scalar",
+    "keys": [
+      "The total amount of flavoring needed"
+    ],
+    "expected": 10.0,
+    "metric": "The total amount of flavoring needed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 579,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit you can get"
+    ],
+    "expected": 3600.0,
+    "metric": "The maximum profit you can get",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 580,
+    "kind": "scalar",
+    "keys": [
+      "The total wage cost"
+    ],
+    "expected": 16650.0,
+    "metric": "The total wage cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 581,
+    "kind": "scalar",
+    "keys": [
+      "The total number of snow removers"
+    ],
+    "expected": 44.0,
+    "metric": "The total number of snow removers",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 582,
+    "kind": "scalar",
+    "keys": [
+      "The maximum volume of the cone"
+    ],
+    "expected": 3.224532575115765,
+    "metric": "The maximum volume of the cone",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 583,
+    "kind": "scalar",
+    "keys": [
+      "The amount of protein consumed"
+    ],
+    "expected": 32.0,
+    "metric": "The amount of protein consumed",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 584,
+    "kind": "vector",
+    "keys": [
+      "The quantity of Fertilizer 1",
+      "The quantity of Fertilizer 2",
+      "The quantity of Fertilizer 3",
+      "The quantity of Fertilizer 4",
+      "The quantity of Fertilizer 5"
+    ],
+    "expected": [
+      0.65,
+      0.1,
+      0.1,
+      0.15,
+      0.0
+    ],
+    "metric": "fertilizer_proportions",
+    "derivation": "逐一比较全部五个比例，而不是仅比较最后一个 0。"
+  },
+  {
+    "id": 585,
+    "kind": "scalar",
+    "keys": [
+      "Maximum Profit"
+    ],
+    "expected": 64000.0,
+    "metric": "Maximum Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 586,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 500.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 587,
+    "kind": "scalar",
+    "keys": [
+      "Maximum Profit"
+    ],
+    "expected": 64000.0,
+    "metric": "Maximum Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 588,
+    "kind": "scalar",
+    "keys": [
+      "The total cost"
+    ],
+    "expected": 5900.0,
+    "metric": "The total cost",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 589,
+    "kind": "scalar",
+    "keys": [
+      "Total number of grills in the store"
+    ],
+    "expected": 6.2,
+    "metric": "Total number of grills in the store",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 590,
+    "kind": "scalar",
+    "keys": [
+      "The profit made"
+    ],
+    "expected": 890.0,
+    "metric": "The profit made",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 591,
+    "kind": "scalar",
+    "keys": [
+      "The total cooking time"
+    ],
+    "expected": 0.0,
+    "metric": "The total cooking time",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 592,
+    "kind": "scalar",
+    "keys": [
+      "The maximum area of the rectangle"
+    ],
+    "expected": 100.0,
+    "metric": "The maximum area of the rectangle",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 593,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 80.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 594,
+    "kind": "scalar",
+    "keys": [
+      "The maximum profit"
+    ],
+    "expected": 48500.0,
+    "metric": "The maximum profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 595,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 500.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 596,
+    "kind": "scalar",
+    "keys": [
+      "The minimum total number of slicers"
+    ],
+    "expected": 7.0,
+    "metric": "The minimum total number of slicers",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 597,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 80000.0,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 598,
+    "kind": "scalar",
+    "keys": [
+      "The minimum cost of the mixture"
+    ],
+    "expected": 78.0,
+    "metric": "The minimum cost of the mixture",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 599,
+    "kind": "scalar",
+    "keys": [
+      "Total profit"
+    ],
+    "expected": 1200.0,
+    "metric": "Total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 600,
+    "kind": "scalar",
+    "keys": [
+      "The total number of printers"
+    ],
+    "expected": 7.0,
+    "metric": "The total number of printers",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 601,
+    "kind": "scalar",
+    "keys": [
+      "Total daily Energy Output"
+    ],
+    "expected": 50000.0,
+    "metric": "Total daily Energy Output",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 602,
+    "kind": "scalar",
+    "keys": [
+      "The maximum volume of the box"
+    ],
+    "expected": 1825.2965881577802,
+    "metric": "The maximum volume of the box",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 603,
+    "kind": "scalar",
+    "keys": [
+      "The total profit"
+    ],
+    "expected": 43656.716250000005,
+    "metric": "The total profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 604,
+    "kind": "scalar",
+    "keys": [
+      "Profit Efficiency"
+    ],
+    "expected": 15.0,
+    "metric": "Profit Efficiency",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  },
+  {
+    "id": 605,
+    "kind": "scalar",
+    "keys": [
+      "Total Profit"
+    ],
+    "expected": 283200.0,
+    "metric": "Total Profit",
+    "derivation": "原始命名目标字段；保持完整精度，不四舍五入为项目旧标签。"
+  }
+]
