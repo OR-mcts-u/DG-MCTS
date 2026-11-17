@@ -1,0 +1,423 @@
+initial_accept_confirmation: |
+  You are an expert operations research reviewer deciding whether a single initial rollout can be accepted without running the full MCTS search.
+
+  Use only the problem statement, structured formulation, generated Pyomo code, solver output, score evidence, and prior review below. Do not use ground truth.
+
+  Problem description:
+  $problem_description
+
+  Structured formulation:
+  $formulation_json
+
+  Generated Pyomo code:
+  $pyomo_code
+
+  Execution output:
+  $execution_output
+
+  Score evidence:
+  $score_report_json
+
+  Prior review:
+  $reasoning_json
+
+  Perform an adversarial, ground-truth-free acceptance check. Your default stance is reject unless the evidence rules out common wrong-model explanations.
+
+  Required checks before accepting:
+  1. Identify the exact answer requested by the problem: scalar objective, derived scalar, single decision variable, or full decision vector.
+  2. Numeric coverage audit: list major numeric groups and check that the formulation/code preserves them without missing rows/columns, sign flips, changed values, omitted fixed costs, or invented simplified surrogates.
+  3. Constraint coverage audit: check that every stated relationship is active in the solved model.
+  4. Answer metric audit: check that answer_value and variables together match the requested business answer, not a helper objective, one component of a requested vector, relaxed surrogate, or value from an incomplete model.
+  5. Try to find at least one plausible counterexample category: missing/changed numeric data, weak/missing constraints, wrong objective/answer metric, unit/scale mismatch, or suspicious trivial/too-cheap solution.
+
+  Common acceptance red flags:
+  - Integer-domain plausibility: reject if the problem asks for counts of machines, vehicles, trips, bags, meals, batches, workers, shifts, containers, pills, packages, selected items, or visited cities but the model uses continuous variables or returns fractional values without explicit fractional permission.
+  - Decision-vector answer: reject if the question asks "how many/how much of each" but answer_value is only the objective value or one component of the decision vector. The variables object must contain every requested component.
+  - Profit/cost wording: reject if a coefficient stated as "profit" or "net revenue" is reduced again by purchase/acquisition cost. Purchase cost should usually be a budget/resource constraint unless the statement gives selling price/revenue.
+  - Ratio direction and denominator: reject if "at most/at least X times" is modeled as equality, or if a percentage/fraction uses the wrong denominator.
+  - Numeric/data coverage: reject if any important table is only partially represented, if rows/columns/periods/arcs/machines/products/materials/customers are missing, or if the code invents placeholder values such as all-zero costs, uniform capacities, default separation times, or guessed tariffs.
+  - Unit and rate semantics: reject if coefficient units do not match variable units, such as treating an output-per-hour production rate as hours-per-unit, dropping per-item/per-batch/per-contract conversion factors, or mixing percentages with whole-number units.
+  - Quantity versus selection: reject if binary variables are used as actual production amounts, work hours, flow quantities, rented area, or material usage when the statement allows variable quantities. Require explicit continuous/integer quantity variables and activation links when needed.
+  - Fixed-charge and activation logic: reject if fixed costs, opening/setup/startup costs, rental contract fees, or line activation costs are merged into variable costs without justification, charged in every period incorrectly, or not linked to a binary activation decision.
+  - Multi-period state: reject if inventory, backlog, cash, workforce, generator-online count, repairable tools, or other carried state lacks period-to-period balance, initial state, or stated final-state logic.
+  - Aircraft landing/scheduling: reject if early/late deviation constraints force target times, if required pairwise separation/no-overlap constraints are missing or weak, or if start-time/makespan variables can become negative.
+  - Job-shop/operation scheduling: reject if the model lacks explicit operation-to-machine conflict coverage, omits one direction of a disjunctive no-overlap pair, or reports an unrealistically small makespan from under-modeled machine capacity.
+  - Flow/transportation/network models: reject if route costs, capacities, supplies, or demands are defaulted to zero/missing, if supply-demand sign convention is unclear, or if node balance/capacity constraints do not cover every node.
+  - Assignment/resource allocation: reject if binary assignment variables are used as actual quantities when the problem requires variable hours/amounts; require separate continuous quantity variables when contribution amounts can vary.
+  - Unit commitment or multi-period production: reject if startup/setup transitions, initial state, reserve/demand coverage, inventory/backlog balance, or fixed/startup/holding/backlog cost terms are omitted or merged incorrectly.
+  - Repair/reusable-resource and investment/cash-flow models: reject if delayed returns, maturity timing, reinvestment eligibility, beginning/end-of-period balances, or terminal wealth are not explicitly modeled.
+  - Blending/recipe/diet models: reject if there is no material-usage or equivalent mass-balance representation, if composition percentages are applied as standalone bounds unrelated to product quantity, or if profit ignores actual raw-material and processing costs.
+  - Cutting-stock and trim-loss models: reject if cutting patterns or valid cut combinations are absent, if demand by each size is not enforced, or if stock length/width capacity and integrality are missing.
+  - Facility location, coverage, and max-min distance: reject if selected/open facilities are not linked to assignments or coverage, if budget/cardinality constraints are missing, or if a max-min-distance objective lets unselected pairs influence the minimum distance.
+  - Routing/path/tour/TSP models: reject if the selected arcs can be disconnected, if flow conservation or depot/visit requirements are incomplete, or if subtour prevention/connectivity is missing when a route or tour is required. Degree constraints alone are not enough for TSP-like tours.
+  - Facility-location/distribution models: reject if route/cost matrices are incomplete, if shipments are not linked to open facilities, or if every customer demand and facility capacity is not covered.
+  - Cash-flow/investment planning: reject if returns are credited in the wrong period, reinvestment eligibility is ignored, initial funds are missing, or the model optimizes a single-period return instead of final capital when final capital is requested.
+  - Solver/reporting evidence: reject if solver status is infeasible, unbounded, unknown, or misreported; reject if objective/answer_value is missing, zero/trivial without justification, or read from a solution that was not loaded after a feasible/optimal solve.
+
+  Return only valid JSON:
+  {
+    "accept": 0,
+    "confidence": "High|Medium|Low",
+    "blocking_layer": "sets|parameters|variables|objective|constraints|code|none",
+    "blocking_issue": "short issue or empty string",
+    "numeric_coverage_issues": ["missing/changed/unchecked numeric facts, or empty list"],
+    "constraint_coverage_issues": ["missing/weak relationships, or empty list"],
+    "answer_metric_issues": ["answer metric concerns, or empty list"],
+    "reason": "short explanation"
+  }
+
+  Set accept=1 only when all issue lists are empty, confidence is High, and the initial rollout is safe to accept without further MCTS search.
+
+generation_preamble: |
+  Before producing the requested component, internally perform a complete five-element modeling check:
+  Sets, Variables, Parameters, Constraints, and Objective.
+  Use that internal check to ensure the requested component is consistent with the whole optimization problem.
+  Do not classify the problem into a fixed type or subtype. Infer the needed modeling structure directly from the problem statement.
+  Do not output the internal analysis. Output only the requested structured component.
+  Do not use ground truth.
+
+target_output_contract_sets: |
+  Return only a raw Python list of set dictionaries.
+  Each dictionary must include name, dimen, and elements.
+  elements should be explicit literal values only when they are small named categories, periods, products, jobs, machines, locations, or other true indexing entities.
+  Do not create one element per unit for aggregate quantities such as 10000 images, 500 dollars, 200 treats, 80 vitamins, or similar totals; represent those quantities as scalar parameters instead.
+  For a true large consecutive integer indexing set that is explicitly needed, use range(start, stop) or list(range(start, stop)); stop is exclusive, so 1 through 200 must be range(1, 201).
+  Do not return comprehensions such as [i for i in range(1, 501)] or placeholder ellipses such as ["...", "Item1000"].
+  Use plain JSON/Python-literal compatible values only. Do not include markdown, explanations, or a wrapper object.
+
+target_output_contract_parameters: |
+  Return only a raw Python list of parameter dictionaries.
+  For scalars, each dictionary must include name and value.
+  For indexed parameters, each dictionary must include name, index_set, and values.
+  values must be explicit literal values. Do not use Python shorthand such as [0.5] * 300, list multiplication, comprehensions, range(...), or formulas.
+  Every symbolic or placeholder value must be a quoted string; never return bare identifiers such as demand_c1 or capacity_v1.
+  Compound indexed keys must use the same string representation style as the existing sets/context. Do not include markdown, explanations, or a wrapper object.
+
+target_output_contract_variables: |
+  Return only a raw Python list of variable dictionaries.
+  Each dictionary must include name and domain.
+  Include index_set when the variable is indexed, and description when it clarifies the variable's unit or role.
+  Do not include markdown, explanations, or a wrapper object.
+
+target_output_contract_objective: |
+  Return only a valid JSON array with exactly one objective object.
+  The object must include "name", "sense", and "expression".
+  "expression" must be one complete JSON string using existing model component names.
+  Use double quotes for JSON keys and string values. Do not use single-quoted Python literals.
+  Never return a raw Python/Pyomo expression as the "expression" value.
+  Correct: [{"name": "Maximize Profit", "sense": "maximize", "expression": "400 * model.NumCows + 120 * model.NumSheep"}]
+  Incorrect: [{"name": "Maximize Profit", "sense": "maximize", "expression": 400 * model.NumCows + 120 * model.NumSheep}]
+  Before returning, verify the final character sequence closes the expression string, object, and array in this order: "}]
+  Do not include markdown, explanations, or a wrapper object.
+
+target_output_contract_constraints: |
+  Return only a raw Python list of constraint dictionaries.
+  Each dictionary must include name and expression.
+  Include description only when useful for preserving semantics.
+  expression must be a quoted string with exactly one top-level relational operator: <=, >=, or ==.
+  Never return a raw Python/Pyomo expression as the expression value.
+  Correct: {"name": "Budget", "expression": "200 * model.NumCows + 80 * model.NumSheep <= model.Budget"}
+  Incorrect: {"name": "Budget", "expression": 200 * model.NumCows + 80 * model.NumSheep <= model.Budget}
+  Do not include markdown, explanations, or a wrapper object.
+
+target_output_contract_default: |
+  Return only the requested raw Python structured object.
+  Do not include markdown, explanations, or a wrapper object unless explicitly requested.
+
+layer_guidance_sets: |
+  Layer responsibility for SETS:
+  - Cover every entity category that needs indexing, such as jobs, operations, machines, periods, products, resources, locations, arcs, scenarios, or candidate choices.
+  - Do not create unit-level sets for aggregate quantities. A requirement like at least 10,000 images, 200 treats, 80 units, or 500 dollars is a scalar parameter, not a set with thousands of elements.
+  - Preserve the natural granularity from the problem statement. Do not collapse distinct entity types if later parameters, variables, or constraints need their relationship.
+  - Include relationship index sets only when the problem gives pairwise or compatibility relationships that must be constrained later.
+  - Do not put numeric coefficients in sets; put them in parameters.
+  - For scheduling, keep jobs, operations, machines, and time periods/positions distinct when they have different roles.
+  - For networks and routing, distinguish nodes, directed/undirected arcs, vehicles/routes, depots, and commodities when applicable.
+  - For multi-period models, include the planning periods explicitly; include predecessor/successor relationships only when transition constraints need them.
+  - For assignment, coverage, compatibility, separation, or recipe relationships, add explicit relationship/index sets when not every cross product is valid.
+
+layer_guidance_parameters: |
+  Layer responsibility for PARAMETERS:
+  - Capture all numeric data from the statement: costs, profits, durations, capacities, demands, bounds, penalties, distances, times, probabilities, conversion factors, and table entries.
+  - Use index sets and key formats that exactly match the existing sets.
+  - Preserve units and scale from the problem statement. If data is per order, per item, per trip, per batch, per month, or per period, make that unit clear in the parameter name or description.
+  - Do not invent placeholder values or omit a stated table just because it is lengthy.
+  - Preserve complete table coverage: every stated product-resource, period-demand, arc-cost/capacity, machine-operation, employee-project, material-product, or pairwise-separation entry must be represented.
+  - Do not replace missing data with default 0, 1, uniform costs, uniform capacities, or guessed separation/coverage values unless the statement explicitly says so.
+  - Keep fixed, variable, startup, setup, holding, backlog, penalty, processing, rental, and activation costs as distinct parameters when they have different economic meanings.
+  - Capture initial states and conversion factors, such as initial inventory/cash/backlog/online units, items per order, output-per-hour rates, percentages, and per-100-unit coefficients.
+  - For indexed parameters, make the arity and key representation match the declared index set exactly.
+
+layer_guidance_variables: |
+  Layer responsibility for VARIABLES:
+  - Define one decision variable for each controllable decision in the problem, with the correct domain and unit/granularity.
+  - Distinguish selection/order/assignment binaries from continuous quantities, integer counts, start times, inventories, deviations, and auxiliary variables.
+  - Add auxiliary variables when needed to express max, min, absolute value, early/late deviation, makespan, logical activation, or linearization.
+  - Keep variable index sets compatible with existing sets and parameters.
+  - Use binary variables for selection, opening, assignment activation, ordering, route use, setup/startup, or yes/no coverage decisions; do not use them as variable quantities unless each selected option has a fixed stated amount.
+  - Use continuous or integer quantity variables for production amounts, work hours, shipped flow, rented area, material usage, power output, inventory, backlog, and cash.
+  - Count-like decisions are nonnegative integers by default even if the word "integer" is absent: machines, vehicles, trips, bags, meals, batches, workers, shifts, containers, pills, gummies, catalysts, packages, orders, and other indivisible objects.
+  - Use continuous variables for divisible quantities such as money invested, hours/time, kg/tons, flow, area, power, material usage, probabilities, proportions, and percentages unless the statement explicitly says they are integer.
+  - For activation logic, include both the activity quantity and the binary activation variable when fixed costs or on/off capacity constraints are present.
+  - For scheduling, include start/completion time variables, makespan when minimizing completion horizon, and ordering binaries for shared-machine or pairwise separation decisions.
+  - For blending or recipes, include material-to-product usage variables or another variable representation that can enforce mass balance and composition percentages.
+  - For max-min, absolute deviation, early/late penalty, reserve shortfall, or goal-programming deviation logic, include the required nonnegative auxiliary/deviation variables.
+
+layer_guidance_objective: |
+  Layer responsibility for OBJECTIVE:
+  - Optimize the exact scalar requested by the problem statement with the correct direction.
+  - Keep internal helper objectives separate from the final requested business metric when they differ.
+  - Check unit consistency term by term: coefficient unit times decision-variable unit must equal the objective unit.
+  - Include all stated cost, profit, penalty, reward, distance, time, waste, or deviation terms that belong to the requested metric.
+  - Distinguish revenue, gross profit, net profit, total cost, final cash/wealth, makespan, total completion time, waste, coverage, and service shortfall; choose the metric asked by the question.
+  - Include fixed costs only through the appropriate activation/open/setup/startup variables, and variable costs through the corresponding quantity variables.
+  - If the statement says a unit is sold for a profit, earns profit, or has net revenue, treat that coefficient as net contribution. Do not subtract purchase/acquisition cost again unless the statement gives selling price/revenue instead of profit.
+  - For purchase-and-sale problems, use purchase/acquisition costs in budget or inventory constraints; use stated per-unit profit in the objective unless the problem explicitly asks for revenue minus cost.
+  - Keep startup/setup, holding, backlog/shortage, earliness/lateness, overtime, processing, rental, transportation, and unmet-demand penalties separate when they are stated separately.
+  - For investment or gambling models, distinguish expected payout, average payout per dollar, weighted-average risk, total terminal wealth, and final cash; optimize the exact metric requested.
+  - For multi-goal or goal-programming models, the weighted deviation expression may be the optimization objective, but the final answer metric may still be a requested business quantity.
+  - For max-min or minimax objectives, use an auxiliary objective variable tied by constraints rather than directly applying Python min/max semantics.
+
+layer_guidance_constraints: |
+  Layer responsibility for CONSTRAINTS:
+  - Cover every stated relationship from the problem text: capacity, demand, balance, conservation, bounds, precedence, separation, assignment, exactly-one, at-most/at-least, mutual exclusion, implication, activation, and state transition.
+  - Translate each natural-language requirement into at least one mathematical relation unless it is already enforced by a variable domain or parameter definition.
+  - Link auxiliary variables to their intended meaning; do not leave makespan, min/max, deviation, activation, or ordering variables weakly constrained.
+  - Use only existing set, parameter, variable, and objective names unless the diagnostic explicitly requires repairing the representation.
+  - For quantity-plus-binary models, include activation links such as quantity <= capacity * binary, and include lower bounds when the statement requires minimum output/use after activation.
+  - For network/flow/transportation models, enforce flow conservation at every applicable node, supply/demand satisfaction, arc capacities, and route or node capacities when stated.
+  - For multi-period inventory, backlog, workforce, cash-flow, equipment, or online-unit models, enforce period-to-period balance plus initial state and any final state requirement.
+  - For reusable tools, repairs, rentals, or delayed returns, enforce delayed availability: items sent out in one period cannot be reused until the stated return/maturity period.
+  - For investment/cash-flow models, enforce beginning/end-of-period cash balances, investment outflows, maturity inflows, reinvestment eligibility, and terminal wealth exactly by timing.
+  - For job-shop and operation scheduling, enforce within-job precedence, machine capacity/non-overlap for every same-machine operation pair, and makespan/completion-time definitions.
+  - For aircraft landing or pairwise separation models, enforce time windows, early/late deviation definitions, and exactly one ordering/separation relation for every relevant pair.
+  - For assignment and staffing, enforce exactly-one/at-most-one rules, skill or compatibility restrictions, worker availability/capacity, project or shift demand, and coverage across all required time blocks.
+  - For blending, diet, and recipe models, enforce mass balance, material availability, product quantity definitions, and composition/quality percentages relative to product quantity.
+  - For cutting-stock and packing-style models, enforce stock length/width/capacity, demand satisfaction by size/type, pattern validity, and integrality of used stock/pattern counts.
+  - For unit commitment and generation planning, enforce demand balance, reserve margin, min/max generation tied to online units, maximum online units, startup transitions, and initial status when stated.
+  - For facility location, coverage, and routing, enforce selection cardinality/budget, assignment-to-open links, coverage definitions, route continuity/connectivity, and subtour elimination or equivalent logic when required.
+  - For TSP-like tours, exactly-one incoming and outgoing degree constraints are insufficient by themselves; include MTZ, flow-based, cutset, or another valid subtour-elimination/connectivity formulation.
+  - For ratio and percentage constraints, preserve the wording and denominator: at-most/at-least are inequalities, exact equality is only for exact wording, and percentages are usually relative to the total of the relevant group.
+
+refine_component: |
+  You are an expert operations research analyst refining one component of an optimization formulation.
+
+  Problem description:
+  $problem_description
+
+  Target layer to revise:
+  $layer_name
+
+  $layer_guidance
+
+  Trusted prefix formulation. Preserve all existing names, index sets, key formats, and modeling semantics unless the diagnostic explicitly says this layer must change:
+  $formulation_json
+
+  Diagnostic revision requests. Each request includes the previous incorrect component, the full bad formulation that produced the error, the reviewer diagnosis, error_type, semantic checks, score evidence, and actionable suggestion:
+  $revision_requests_json
+
+  Refinement task:
+  1. Compare the previous incorrect component against the problem statement and trusted prefix.
+  2. Identify which requirements from the problem statement belong to the target layer, and ensure the revised component covers them.
+  3. Preserve valid parts of the previous component, but replace or add anything needed to fix the diagnosed issue.
+  4. Do not regenerate unrelated layers.
+  5. Preserve units and business scale. If variables count orders, batches, packages, trips, shipments, vehicles, or boxes while coefficients are per item/unit/product/table/kg/person, include the conversion factor.
+  6. Keep the component compatible with Pyomo expression syntax and the existing prefix names.
+  7. Do not use ground truth.
+
+  $consistency_rules
+
+  Output contract:
+  $output_contract
+
+  IMPORTANT: Do not include explanations, markdown formatting, or code fences. Return only the raw Python list.
+
+representation_consistency_rules: |
+  Representation consistency rules. Follow them strictly:
+  1. Reuse all existing set names, parameter names, variable names, index keys, and key formats exactly as already defined.
+  2. Do not introduce a new encoding for an existing concept. For example, if demand periods are written as '2:00-6:00', do not rewrite them as '2:00, 6:00' or '(2, 6)'.
+  3. Do not redesign an existing parameterization if it is already usable. Extend it minimally.
+  4. Constraints must operationalize the existing parameters instead of reinterpreting the problem from scratch.
+  5. If you detect a flaw in the current representation, repair it minimally while preserving the current naming and indexing style.
+
+  Existing formulation context:
+  $context_json
+
+generate_sets: |
+  I need you to help me generate the SETS component for a mathematical optimization formulation.
+
+  Problem description:
+  $problem_description
+
+  $generation_preamble
+
+  $layer_guidance
+
+  $consistency_rules
+
+  Expert suggestions from previous SETS errors:
+  $suggestions
+
+  Provide the sets needed for this optimization problem. Return a Python list of dictionaries.
+  Only generate the SETS component. Do not generate parameters, variables, objective, constraints, explanations, or diagnostics.
+  Each dictionary should have 'name', 'dimen', and 'elements' keys. Do not include explanations.
+  If there are too many consecutive integer elements, use range(start, stop) or list(range(start, stop)) instead of omitting values.
+  For graph-based problems, model both nodes and edges as sets when edges matter.
+  Do not create sets for numeric coefficients; numeric data belongs in parameters.
+  If a relationship is not a full Cartesian product, prefer an explicit relationship set such as valid arcs, compatible pairs, operation-machine pairs, or separation pairs.
+
+  IMPORTANT: Do not use markdown formatting or code blocks. Return only the raw Python list.
+
+generate_parameters: |
+  I need you to help me generate the PARAMETERS component for a mathematical optimization formulation.
+
+  Problem description:
+  $problem_description
+
+  $generation_preamble
+
+  $layer_guidance
+
+  Sets already defined:
+  $sets
+
+  $consistency_rules
+
+  Expert suggestions from previous PARAMETERS errors:
+  $suggestions
+
+  Provide the parameters needed for this optimization problem. Return a Python list of dictionaries.
+  Only generate the PARAMETERS component. Do not generate sets, variables, objective, constraints, explanations, or diagnostics.
+  Before returning, check that every numeric table in the statement is represented exactly once at the right index granularity.
+  For indexed parameters, include 'name', 'index_set', and 'values' keys.
+  For scalar parameters, include 'name' and 'value' keys.
+  For repeated indexed values, write the full literal list explicitly; do not abbreviate with [value] * n, range(...), comprehensions, or generated formulas.
+  Do not use tuples or lists as dictionary keys; convert compound keys into strings.
+  Indexed parameter keys must match declared index sets exactly in arity and representation style.
+  Do not invent placeholder values or fill missing data with default 0, 1, uniform costs, uniform capacities, or guessed values.
+
+  IMPORTANT: Do not use markdown formatting or code blocks. Return only the raw Python list.
+
+generate_variables: |
+  I need you to help me generate the VARIABLES component for a mathematical optimization formulation.
+
+  Problem description:
+  $problem_description
+
+  $generation_preamble
+
+  $layer_guidance
+
+  Sets already defined:
+  $sets
+
+  Parameters already defined:
+  $parameters
+
+  $consistency_rules
+
+  Expert suggestions from previous VARIABLES errors:
+  $suggestions
+
+  Provide the variables needed for this optimization problem. Return a Python list of dictionaries.
+  Only generate the VARIABLES component. Do not generate sets, parameters, objective, constraints, explanations, or diagnostics.
+  Each dictionary should have 'name', 'domain', and optionally 'index_set' and 'description' keys.
+  The domain should be one of: 'Binary', 'Integer', 'NonNegativeIntegers', 'NonNegativeReals', or 'Reals'.
+  Count-like decisions should be NonNegativeIntegers by default, including machines, vehicles, trips, bags, meals, batches, workers, shifts, containers, pills, gummies, catalysts, packages, orders, and other indivisible objects.
+  Use NonNegativeReals for divisible quantities such as money invested, hours/time, kg/tons, flow, area, power, material usage, probabilities, proportions, and percentages unless the statement explicitly requires integers.
+  Do not use a binary variable as a production amount, work hour, flow quantity, rented area, material usage, inventory, cash, or power output unless the statement says the selected option contributes a fixed amount.
+  If activation, ordering, deviation, makespan, max/min, or composition logic is needed, include the corresponding auxiliary variables at this layer.
+
+  IMPORTANT: Do not use markdown formatting or code blocks. Return only the raw Python list.
+
+generate_objective: |
+  I need you to help me generate the OBJECTIVE component for a mathematical optimization formulation.
+
+  Problem description:
+  $problem_description
+
+  $generation_preamble
+
+  $layer_guidance
+
+  Sets already defined:
+  $sets
+
+  Parameters already defined:
+  $parameters
+
+  Variables already defined:
+  $variables
+
+  $consistency_rules
+
+  Expert suggestions from previous OBJECTIVE errors:
+  $suggestions
+
+  Provide the objective function as a valid JSON array with a single object.
+  Only generate the OBJECTIVE component. Do not generate sets, parameters, variables, constraints, explanations, or diagnostics.
+  The object should have "name", "sense", and "expression" keys.
+  The sense should be either "maximize" or "minimize".
+  The expression should be a valid Pyomo expression JSON string using "model." names.
+  Put the entire expression value inside double quotes. Do not return raw Python/Pyomo code as the expression value.
+  Return compact one-line JSON when possible; long expressions are allowed only if they remain a single closed string.
+  Correct: [{"name": "Maximize Profit", "sense": "maximize", "expression": "400 * model.NumCows + 120 * model.NumSheep"}]
+  Incorrect: [{"name": "Maximize Profit", "sense": "maximize", "expression": 400 * model.NumCows + 120 * model.NumSheep}]
+  Final self-check before answering: the expression string has a closing quote, then the object closes, then the array closes.
+
+  Objective selection rules:
+  1. Do not use a zero/constant feasibility objective unless the problem explicitly asks only for feasibility.
+  2. Choose the metric most directly tied to the question.
+  3. If a harmful metric has an upper bound but no explicit objective, minimizing it is a strong candidate.
+  4. Preserve units. If a variable counts orders/packages/trips while a coefficient is per item/unit inside each order/package/trip, include the conversion factor.
+  5. Re-substitute the objective back into the statement and check answer-metric alignment.
+  6. Do not optimize an internal helper metric if the problem asks for a business metric such as final cash, total profit, total cost, makespan, coverage, service shortfall, or unmet demand.
+  7. If the statement says each unit is sold for a profit, earns profit, or has net revenue, treat that coefficient as net contribution and do not subtract purchase/acquisition cost again.
+  8. For investment/gambling models, distinguish expected payout, average payout per dollar, weighted-average risk, total terminal wealth, and final cash; choose the exact requested metric.
+
+  IMPORTANT: Do not use markdown formatting or code blocks. Return only the raw Python list.
+
+generate_constraints: |
+  I need you to help me generate the CONSTRAINTS component for a mathematical optimization formulation.
+
+  Problem description:
+  $problem_description
+
+  $generation_preamble
+
+  $layer_guidance
+
+  Sets already defined:
+  $sets
+
+  Parameters already defined:
+  $parameters
+
+  Variables already defined:
+  $variables
+
+  Objective function:
+  $objective
+
+  $consistency_rules
+
+  Expert suggestions from previous CONSTRAINTS errors:
+  $suggestions
+
+  Provide the constraints as a Python list of dictionaries.
+  Only generate the CONSTRAINTS component. Do not generate sets, parameters, variables, objective, explanations, or diagnostics.
+  Each dictionary should have 'name', 'expression', and optionally 'description' keys.
+  The expression should be a valid Pyomo expression string using 'model.' names.
+  Put the entire expression value inside quotes. Do not return raw Python/Pyomo code as the expression value.
+  Correct: [{'name': 'Budget', 'expression': '200 * model.NumCows + 80 * model.NumSheep <= model.Budget'}]
+  Incorrect: [{'name': 'Budget', 'expression': 200 * model.NumCows + 80 * model.NumSheep <= model.Budget}]
+  Each constraint expression must contain exactly one relational operator (<=, >=, or ==) at the top level.
+  Do not use chained equalities/inequalities, and do not put relational expressions inside arithmetic.
+  If coverage/incidence/compatibility/routing/adjacency parameters already exist, use them directly.
+  Every auxiliary variable, activation binary, ordering binary, inventory/backlog state, flow variable, deviation variable, and makespan variable must be linked by constraints.
+  For TSP-like tours, include subtour-elimination/connectivity constraints; exactly-one in/out degree constraints alone are not sufficient.
+  For multi-period cash, inventory, workforce, repair, and reusable-resource models, include explicit state-transition constraints with initial state and final/terminal state when relevant.
+  For ratio and percentage constraints, encode the exact inequality/equality direction and denominator from the wording.
+  Do not invent missing prior components. Use existing names only; if a needed prior component is absent, write the closest compatible constraint using the available representation.
+
+  IMPORTANT: Do not use markdown formatting or code blocks. Return only the raw Python list.

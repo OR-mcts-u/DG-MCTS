@@ -1,0 +1,283 @@
+llm_review_candidate: |
+  You are an expert operations research analyst and Pyomo/Gurobi model reviewer.
+
+  Use only the problem description, structured formulation, generated Pyomo code, Pyomo/Gurobi execution output, and parsed solver evidence below.
+  Diagnose whether the formulation and Pyomo code faithfully implement the problem statement. Treat the solver objective value as execution evidence, not proof of semantic correctness.
+
+  Problem description:
+  $problem_description
+
+  Structured formulation:
+  $formulation
+
+  Generated Pyomo code:
+  $pyomo_code
+
+  Execution output from Pyomo/Gurobi:
+  $execution_output
+
+  Parsed solver evidence and selection score report:
+  $score_report
+
+  $code_suggestions_block
+
+  Required review:
+  - Check whether the solved model represents the problem statement, not just whether it is executable.
+  - Be adversarial even when the solver status is optimal and all automatic score components are 1.0; an optimal result is not evidence that domains, answer metric, or business semantics are correct.
+  - Treat unit and scale consistency as a first-class check.
+  - Extract entities, numeric data, controllable decisions, requested objective/answer metric, and every stated relationship.
+  - Audit major numeric groups: costs, capacities, demands/supplies, processing times, due dates, penalties, bounds, fixed costs, route tables, coverage lists, and compatibility/incidence data.
+  - Audit variable domains against natural-language discreteness. If the question asks for counts such as how many machines, vehicles, trips, bags, meals, batches, workers, containers, pills, packages, cities visited, or selected items, continuous variables are suspicious unless fractional units are explicitly allowed.
+  - Audit answer packaging. If the problem asks "how many/how much of each", the variables object must contain the complete requested decision vector; returning only objective or a single decision variable is an answer metric issue even if the model objective is correct.
+  - Audit profit/cost wording. If the statement says "sold for a profit of X", "earns X profit", or "net revenue X", treat X as net contribution unless the statement separately asks for revenue minus cost. Purchase/acquisition cost may only be a budget/resource constraint in that case.
+  - Audit ratio and percentage semantics: identify the denominator and direction. "At most 40% are manual", "at least three times", "twice as many", and "thrice" must be translated carefully; do not silently convert a ratio requirement into equality unless the wording requires equality.
+  - Assign each issue to exactly one primary layer:
+    sets, parameters, variables, objective, constraints, or code.
+  - If a requirement is absent or weakly modeled, mark the responsible layer need_revise=1 and provide a concrete prompt.
+
+  Common modeling traps:
+  - Integer-domain traps: count-like decisions are normally nonnegative integer variables; fractional optimal values for count-like objects are suspicious.
+  - Answer-metric traps: "how many/how much of each" asks for a decision vector, not just a scalar objective value.
+  - Profit wording traps: per-unit profit/net revenue should not be reduced again by purchase cost unless the statement defines it as selling price or revenue.
+  - Ratio traps: distinguish "at least/at most X times" from "exactly X times" and preserve the correct denominator for percentages.
+  - Multi-period inventory/workforce/state models need state-transition constraints and initial/final state constraints when implied.
+  - Investment/cash-flow models need maturity timing, reinvestment eligibility, beginning/end-of-period balances, and terminal wealth semantics.
+  - Repair/reusable-resource models need delayed-return state transitions; items sent to repair are unavailable until their return period.
+  - Goal-programming models need deviation variables and priority/weighted objective semantics.
+  - Blending models need material balance and composition/quality constraints.
+  - Cutting-stock/pattern models need demand satisfaction, stock-length constraints, and pattern-selection semantics.
+  - Assignment/matching models usually need exactly-one constraints on both sides.
+  - Routing/network models need visit/flow/connectivity/time-window/bottleneck semantics as applicable. TSP degree constraints alone are insufficient without subtour-elimination or equivalent connectivity.
+  - Transportation/facility-location models need complete feasible route/cost/capacity data, demand coverage for every customer, facility capacity, and shipment-to-open activation links.
+  - Piecewise/tiered/discount models need correct tier activation and quantity semantics.
+  - Placeholder, dummy, all-zero, TODO, or invented numeric data is a parameters/code issue.
+  - Suspicious all-zero solutions should be challenged unless the statement truly allows and asks for zero.
+  - answer_value must match the scalar requested by the problem, not an unrelated internal objective.
+
+  Evaluate four dimensions:
+  1. Definition Consistency: entity sets, parameters, values, units, dimensions, index sets, and scale.
+  2. Structural Soundness: objective direction/metric, constraints, logic, and variable domains.
+  3. Pyomo Implementation Faithfulness: code implements the formulation without changing semantics.
+  4. Numerical/Solver Evidence: status, gap, objective plausibility, and suspicious variable values.
+
+  Return only valid JSON. Do not include markdown or code fences.
+
+  Required JSON schema:
+  {
+    "summary": "short overall diagnosis, or empty string",
+    "numeric_audit": {
+      "missing_or_changed_numbers": ["short descriptions, or empty list"],
+      "unchecked_numeric_groups": ["important numeric groups that could not be verified, or empty list"],
+      "confidence": "High|Medium|Low"
+    },
+    "semantic_flags": {
+      "issues": ["short issue codes or empty list"],
+      "suspicious_zero_solution": 0,
+      "placeholder_or_missing_data": 0,
+      "answer_metric_mismatch_risk": 0,
+      "unit_scale_mismatch_risk": 0,
+      "objective_metric_mismatch_risk": 0,
+      "missing_business_conversion_factor": 0,
+      "overall_risk": "low|medium|high"
+    },
+    "revisions": {
+      "sets": {"revise": 0, "uncertainty": 0.0, "error_type": "", "reason": "", "prompt": ""},
+      "parameters": {"revise": 0, "uncertainty": 0.0, "error_type": "", "reason": "", "prompt": ""},
+      "variables": {"revise": 0, "uncertainty": 0.0, "error_type": "", "reason": "", "prompt": ""},
+      "objective": {"revise": 0, "uncertainty": 0.0, "error_type": "", "reason": "", "prompt": ""},
+      "constraints": {"revise": 0, "uncertainty": 0.0, "error_type": "", "reason": "", "prompt": ""},
+      "code": {"revise": 0, "uncertainty": 0.0, "error_type": "", "reason": "", "prompt": ""}
+    }
+  }
+
+  For each layer:
+  - Set revise=1 only if the issue belongs to that layer.
+  - Use compact error_type labels such as missing_parameter, wrong_objective_metric, unit_scale_mismatch, missing_constraint, wrong_domain, index_mismatch, implementation_bug, solver_status_issue, answer_metric_mismatch, or unknown.
+  - The prompt must be actionable and reusable in the next generation of that layer.
+  - If no revision is needed, prompt must be "".
+  - For code, report only Pyomo implementation issues, not formulation-level issues.
+
+answer_json_contract: |
+  Mandatory answer-output contract:
+  - The generated code MUST import json in addition to Pyomo if json is not already imported.
+  - Immediately after solving, the code MUST print exactly one solver-status marker line beginning with "__SOLVER_STATUS__ ".
+  - The solver-status marker is required even when the model is infeasible, unbounded, time-limited, or otherwise not solved to optimality.
+  - Normalize the marker value when possible to one of: optimal, feasible, time_limit, infeasible, unbounded, unknown.
+  - After solving and after checking that a feasible or optimal solution exists, the code MUST print exactly one line beginning with "__ANSWER_JSON__ ".
+  - That line must contain valid one-line JSON produced by json.dumps.
+  - The JSON object must include these keys:
+    {
+      "objective": <numeric objective value or null>,
+      "answer_value": <numeric scalar final answer requested by the problem>,
+      "answer_type": "objective|decision_variable|derived_metric|multiple_values|unknown",
+      "answer_metric_name": <short name for what answer_value represents>,
+      "why_this_matches_question": <brief explanation of why answer_value is the requested scalar>,
+      "variables": <object with important decision variable values>,
+      "derived_metrics": <object with important totals>,
+      "unit": <unit string for answer_value>
+    }
+  - If the question asks for the optimal objective value, set answer_value equal to objective.
+  - If the question asks for a derived metric, set answer_value to that derived metric.
+  - If the question asks "how many/how much of each", the complete requested decision vector MUST be present in variables with clear keys and units. Do not report only one component of a requested decision vector.
+  - If a scalar answer_value is still required for a decision-vector question, use the optimized scalar objective only as a secondary summary and explain that the requested plan is in variables.
+  - For goal-programming or multi-goal models, the weighted/priority deviation objective is usually internal; report the requested business metric as answer_value.
+  - Do not use placeholder numeric data.
+  - Do not print natural-language-only answers; always print __SOLVER_STATUS__ and __ANSWER_JSON__.
+
+  Answer/unit schema guidance:
+  $schema_text
+
+generate_pyomo_code: |
+  I need you to generate Pyomo code for the following mathematical formulation.
+
+  Problem description:
+  $problem_description
+
+  Formulation:
+  $formulation
+
+  $code_suggestions_block
+
+  Please generate complete, executable Pyomo code that implements this formulation. The code should:
+  1. Directly use "from pyomo.environ import *".
+  2. Include "import json".
+  3. Create a concrete model.
+  4. Define sets, parameters, variables, objective, and constraints as specified.
+  5. Solve with Gurobi:
+     solver = SolverFactory("gurobi")
+     solver.options["TimeLimit"] = $gurobi_time_limit
+     results = solver.solve(model, tee=True, load_solutions=False)
+     Immediately print "__SOLVER_STATUS__ <normalized_status>".
+     Only call model.solutions.load_from(results) when a feasible/optimal solution exists.
+  6. Display results.
+
+  $answer_json_instructions
+
+  Important implementation rules:
+  - Return only Python code, with no explanations or markdown formatting.
+  - Do not evaluate Pyomo variables in Python if-statements.
+  - Constraint rules must return Pyomo expressions or Constraint.Skip, never plain True/False.
+  - Do not write chained comparisons/equalities.
+  - Never put a relational expression inside arithmetic.
+  - Do not use Python max(), min(), abs(), if/else expressions, or // integer division on Pyomo Var/Expression objects.
+  - Express max/min/absolute/deviation logic with Pyomo auxiliary variables and constraints:
+    * max(0, expr): define model.aux = Var(domain=NonNegativeReals), add model.aux >= expr, and use model.aux.
+    * abs(expr): define model.pos = Var(domain=NonNegativeReals) and model.neg = Var(domain=NonNegativeReals), add expr == model.pos - model.neg, and use model.pos + model.neg.
+    * max(a, b): define model.z = Var(), add model.z >= a and model.z >= b; in a minimization objective model.z will take the maximum.
+    * min(a, b): do not call min(); use an equivalent Pyomo linear formulation with bounds, auxiliary variables, binaries, or problem-specific logic.
+    * tardiness/earliness: define nonnegative Pyomo deviation variables and link them with constraints such as model.T[j] >= completion[j] - due[j].
+  - Preserve problem units and conversion factors.
+  - If variables count orders/packages/trips and coefficients are per item/unit, multiply by items/units per order/package/trip.
+  - Count-like decisions are integer by default: machines, vehicles, trips, bags, meals, batches, workers, shifts, containers, pills, gummies, catalysts, cities selected/visited, packages, orders, and other indivisible objects should use NonNegativeIntegers or Binary unless the statement explicitly allows fractional quantities.
+  - Continuous domains are appropriate for money invested, hours/time, weight/volume, flow, area, power output, material usage, probabilities, proportions, and other divisible quantities unless the statement says they are integer.
+  - Distinguish production/assignment/flow quantities from binary selection decisions. Use binary variables only for activation or selection unless the statement says each selected option contributes a fixed amount.
+  - Do a numeric table coverage check before coding: every row/column/period/arc/machine/product/material/customer entry from the statement must either appear in data or be deliberately explained by the model structure.
+  - Interpret rates and units carefully. If a rate is output per hour, hours used are usually quantity / rate; if a coefficient is hours per unit, hours used are coefficient * quantity.
+  - Preserve profit/cost semantics. If the statement says each unit is sold for a profit or net revenue, use that value directly in the objective; keep purchase/acquisition cost in budget/resource constraints only unless the statement gives selling price/revenue and asks to subtract cost.
+  - Preserve ratio wording exactly. "At most/at least X times" is an inequality; "is X times" may be equality only if the wording clearly requires exact equality. Percent/fraction constraints must use the correct denominator.
+  - For aircraft landing, keep earliest, target, latest, and separation semantics distinct.
+  - For assignment/scheduling/multi-period models, keep exactly-one, no-overlap/order, and state-transition constraints intact.
+  - Domain-specific modeling checks before writing code:
+    * Production and resource allocation: preserve all resource capacities, minimum commitments, maximum demand/market bounds, and product-specific profit/cost terms. Check whether the objective is revenue, net profit, or cost; do not mix fixed, variable, and processing costs into one coefficient unless the statement defines that net coefficient. Treat production rates according to their units, e.g. quantity divided by rate when the rate is output per hour.
+    * Contract rental, leasing, and fixed-charge decisions: index options by start time and duration when coverage spans multiple periods. Use the real tariff/fixed-cost table for each option, enforce that selected options cover the required amount in every period, and link any rented/served quantity to the binary activation variable.
+    * Aircraft landing with early/late penalties: model earliness and lateness with nonnegative deviation inequalities such as Early[a] >= Target[a] - LandingTime[a] and Late[a] >= LandingTime[a] - Target[a]. Do not impose both as equalities, which can force LandingTime[a] == Target[a]. Include all required pairwise separation constraints; never skip a separation table by setting it to None.
+    * Job-shop or operation scheduling: define nonnegative start times for every operation and a nonnegative makespan. Enforce makespan >= start + processing for every operation, precedence within each job, and both big-M disjunctive non-overlap directions for every unordered pair of operations sharing the same machine. Use a sufficiently large M derived from total processing time or time horizon.
+    * For job-shop machine conflicts, do not manually list only a few conflict pairs unless the statement gives exactly those pairs. Prefer explicit operation-to-machine data, then generate all same-machine unordered pairs. Keep Pyomo Set dimen and tuple keys consistent; do not initialize a dimen=2 Set with flattened 4-tuples or vice versa.
+    * Min-cost flow / transportation networks: preserve the stated sign convention for supply and demand. Enforce flow conservation at every node, demand satisfaction, route capacities, and node capacities when present. Use continuous flow variables for shipped amounts and binary route variables only when the problem asks to activate/select routes. Do not default missing route costs, capacities, or supplies/demands to zero.
+    * Assignment with hours or capacities: if the amount of work can vary, use nonnegative hours/work variables h[i,j]; binary assignment variables alone are only valid when each selected assignment contributes a fixed stated amount. Treat MaxHours/Capacity tables as upper bounds unless the statement says they are fixed contributions. Enforce both worker capacity/availability and project demand requirements.
+    * Workforce shift coverage: represent each shift start decision separately from coverage. A worker or nurse starting at a time may cover multiple later time blocks, including wraparound blocks across midnight; enforce required staffing in every block.
+    * Unit commitment / power generation: tie generation to online generator counts with min/max output bounds, include demand balance in every period, fixed online cost per generator-period, startup cost only for startup variables, startup transition constraints, and initial online status when stated. Reserve-margin or spare-capacity requirements must be enforced in every period if stated.
+    * Multi-period production/inventory/backlog: enforce inventory/backlog balance across periods, include initial inventory/backlog conditions, link setup/startup binaries to production quantities, and keep holding/backlog/setup/startup costs separate.
+    * Reusable tools, repair, and delayed returns: track available stock, used tools, items sent to each repair option, and repaired items returning after the stated delay. Enforce demand in each period and do not treat future repairs as immediate purchases.
+    * Cash-flow and investment planning: maintain period-by-period cash balance, timing of investments and returns, reinvestment eligibility, initial funds, and final wealth/objective semantics. Do not maximize a single-period return when the statement asks for final capital.
+    * Blending, diet, and recipe models: use material-to-product usage variables or an equivalent mass-balance formulation. Composition percentages must constrain material usage relative to product quantity, and profit should be revenue minus actual material and processing costs.
+    * Cutting-stock and trim-loss models: use cutting pattern variables or explicitly valid cut combinations. Enforce demand for every requested size, stock length/width limits, integrality of stock/pattern counts, and the stated objective such as minimum stock used, minimum waste, or maximum profit.
+    * Facility location, coverage, and max-min distance: keep open/select binary variables separate from assignment or coverage quantities. For max-min distance, use an auxiliary variable for the minimum selected-pair distance and activate pairwise distance constraints only when both locations are selected.
+    * Routing, path, and TSP models: use arc binaries and flow/connectivity/subtour-elimination or equivalent constraints when visits/routes are required. For TSP, exactly-one incoming/outgoing degree constraints alone are not enough; add MTZ, flow-based, cutset, or another valid subtour-elimination formulation and ensure the extracted tour is one connected cycle.
+    * Facility-location and distribution networks: include complete facility-customer route/cost data, open-facility binaries, shipment quantities, demand satisfaction, facility capacities, and shipment-to-open links such as ship[c,s] <= capacity[c] * open[c].
+    * Pyomo data and reporting sanity: do not invent default tables such as all-zero costs or missing separation matrices. For scalar Param values use value(model.ParamName) rather than model.ParamName.value when the object might already be numeric. Normalize solver status carefully: check infeasible before matching feasible, and only load/report objective values for feasible or optimal solutions.
+
+generate_pyomo_code_with_error: |
+  I attempted to implement the following mathematical formulation using Pyomo.
+
+  Problem description:
+  $problem_description
+
+  Formulation:
+  $formulation
+
+  $code_suggestions_block
+
+  Previous Pyomo code:
+  $previous_pyomo_code
+
+  Error message:
+  $error
+
+  Generate a corrected complete, executable Pyomo implementation. Keep the original problem semantics and fix the error.
+
+  Required solver pattern:
+  solver = SolverFactory("gurobi")
+  solver.options["TimeLimit"] = $gurobi_time_limit
+  results = solver.solve(model, tee=True, load_solutions=False)
+  Immediately print "__SOLVER_STATUS__ <normalized_status>".
+  Only call model.solutions.load_from(results) when a feasible/optimal solution exists.
+
+  $answer_json_instructions
+
+  Important repair rules:
+  - Return only the corrected Python code, with no explanations or markdown formatting.
+  - Preserve the mandatory __SOLVER_STATUS__ and __ANSWER_JSON__ outputs.
+  - If a constraint resolves to plain True, remove it or return Constraint.Skip as appropriate.
+  - Rewrite EqualityExpression/InequalityExpression or VarData operand errors into one top-level relation.
+  - Do not use Python max(), min(), abs(), if/else expressions, or // integer division on Pyomo Var/Expression objects.
+  - Express max/min/absolute/deviation logic with Pyomo auxiliary variables and constraints:
+    * max(0, expr): define model.aux = Var(domain=NonNegativeReals), add model.aux >= expr, and use model.aux.
+    * abs(expr): define model.pos = Var(domain=NonNegativeReals) and model.neg = Var(domain=NonNegativeReals), add expr == model.pos - model.neg, and use model.pos + model.neg.
+    * max(a, b): define model.z = Var(), add model.z >= a and model.z >= b; in a minimization objective model.z will take the maximum.
+    * min(a, b): do not call min(); use an equivalent Pyomo linear formulation with bounds, auxiliary variables, binaries, or problem-specific logic.
+    * tardiness/earliness: define nonnegative Pyomo deviation variables and link them with constraints such as model.T[j] >= completion[j] - due[j].
+  - Preserve units, conversion factors, objective metric, and answer_value semantics.
+  - Preserve count domains during repair. Do not relax count-like decisions to Reals just to make the model easier to solve.
+  - Preserve profit/cost wording during repair. Do not subtract purchase cost from a per-unit profit/net-revenue coefficient unless the problem explicitly defines the coefficient as selling price or revenue.
+  - When repairing, do not only make the code executable. Re-check whether the data tables, variable units, objective terms, and constraints still preserve the original problem semantics.
+  - For goal programming, do not report the weighted deviation objective as answer_value unless explicitly asked.
+  - For aircraft landing, use target time for early/late penalties and earliest/latest only for bounds.
+  - For assignment, scheduling, and multi-period models, keep exactly-one, no-overlap/order, and transition constraints intact.
+  - Domain-specific repair checks:
+    * Production and resource allocation: keep all capacity, commitment, market/demand, and profit/cost data. Repair unit mistakes such as using rate * quantity when the statement defines rate as output per hour and the constraint should use quantity / rate.
+    * Contract rental, leasing, and fixed-charge decisions: preserve start-period/duration coverage, true tariff/fixed-cost coefficients, and activation-to-quantity links. Do not replace a missing fee table with guessed values.
+    * Aircraft landing with early/late penalties: keep earliness/lateness as nonnegative deviation inequalities, not paired equalities that force target landing. Preserve all required pairwise separation constraints and do not invent default separation data.
+    * Job-shop or operation scheduling: keep start times and makespan nonnegative; enforce makespan >= start + processing for every operation, job precedence, and both big-M non-overlap directions for every unordered same-machine operation pair. Keep Pyomo Set dimen and tuple keys consistent.
+    * Min-cost flow / transportation networks: preserve supply/demand sign convention, flow conservation at every node, demand satisfaction, route capacities, and node capacities. Do not default missing costs, capacities, supplies, or demands to zero.
+    * Assignment with hours or capacities: use continuous hours/work variables h[i,j] when contribution amounts can vary; treat MaxHours/Capacity as upper bounds unless explicitly fixed contributions.
+    * Workforce shift coverage: keep the mapping from each start time to all covered demand blocks, including wraparound across midnight, and enforce staffing requirements in every block.
+    * Unit commitment / power generation: preserve generation min/max linked to online counts, per-period demand/reserve constraints, startup transition logic, fixed online costs, startup costs, and initial status when stated.
+    * Multi-period production/inventory/backlog: preserve period-to-period balance equations, initial inventory/backlog, setup/startup-to-production links, and distinct holding/backlog/setup/startup costs.
+    * Reusable tools, repair, and delayed returns: preserve delayed return timing, availability balance, usage requirements, and end-of-horizon treatment for repairs that would return after the planning horizon.
+    * Cash-flow and investment planning: preserve timing of investments, maturity/return periods, initial funds, reinvestment constraints, and final-capital objective semantics.
+    * Blending, diet, and recipe models: repair with material usage variables and mass-balance/composition constraints when fixed product quantities alone cannot represent the recipe. Compute profit from actual usage, selling price, raw-material cost, and processing fee.
+    * Cutting-stock and trim-loss models: repair missing pattern logic, demand satisfaction by size, stock length/width capacity, integer pattern counts, and the stated waste/stock/profit objective.
+    * Facility location, coverage, and max-min distance: preserve binary selection/opening variables, assignment/coverage links, budgets or cardinality constraints, and correct auxiliary-variable logic for minimum selected-pair distance.
+    * Routing, path, and TSP models: preserve route continuity, flow conservation, visit requirements, vehicle/depot constraints, and subtour-prevention logic when the problem asks for routes or tours. Degree constraints alone are insufficient for TSP-like tours.
+    * Facility-location and distribution networks: preserve complete route/cost matrices, demand satisfaction, facility capacity, open/close binaries, fixed opening costs, and shipment-to-open activation links.
+    * Pyomo status/reporting: normalize infeasible before feasible, only load/report objectives for feasible or optimal results, and use value(model.ParamName) for scalar Params instead of assuming a .value attribute on objects that may already be floats.
+
+verify_optimization_solution: |
+  I need you to verify if an optimization model solution is correct.
+
+  Execution output from the Pyomo model:
+  ```
+  $execution_output
+  ```
+
+  Ground truth value (expected optimal value): $ground_truth
+
+  Please verify if the optimization solution matches the ground truth.
+  Answer with "YES" or "NO" followed by a brief explanation.
+  Do not output anything other than your verification and explanation.
+
+  IMPORTANT:
+  1. If the result matches ground_truth within 0.001, output YES.
+  2. If the optimization solution is consistent with the ground truth, output YES.
+  3. If the result can be rounded or truncated to a value within 0.001 of ground_truth, output YES.

@@ -1,0 +1,67 @@
+generate_full_formulation: |
+  You are an expert operations research analyst. Generate one complete five-element mathematical optimization formulation for the problem below.
+
+  Problem description:
+  $problem_description
+
+  Task:
+  Produce the full structured formulation in one response, including sets, parameters, variables, objective, and constraints.
+  Do not use ground truth. Do not write Pyomo code. Do not include explanations, diagnostics, markdown, or code fences.
+
+  Modeling requirements:
+  1. Preserve every numeric fact, table entry, unit, bound, capacity, demand, cost, profit, duration, distance, probability, and conversion factor from the statement.
+  2. Use sets only for true indexing entities such as products, jobs, machines, periods, locations, arcs, resources, or candidate choices.
+  3. Do not create one element per unit for aggregate quantities such as 10000 images, 500 dollars, 200 treats, or 80 units. Represent those as scalar parameters.
+  4. Define one decision variable for each controllable decision, with the correct domain and unit.
+  5. Count-like decisions are nonnegative integers by default, including machines, vehicles, trips, bags, meals, batches, workers, shifts, containers, pills, packages, orders, and other indivisible objects.
+  6. Use continuous variables for divisible quantities such as money, hours, kg/tons, flow, area, power, material usage, probabilities, proportions, and percentages unless the statement explicitly requires integers.
+  7. Do not use binary variables as production amounts, work hours, flows, material quantities, inventories, cash, or power output unless each selected option contributes a fixed stated amount.
+  8. Optimize the exact scalar requested by the question, with the correct maximize/minimize direction.
+  9. Include every stated relationship as a constraint unless it is already enforced by a variable domain or parameter definition.
+  10. Preserve unit consistency. If variables count orders, batches, packages, trips, shipments, vehicles, or boxes while coefficients are per item/unit/product/table/kg/person, include the conversion factor.
+  11. For fixed-charge, setup, startup, opening, rental, or activation logic, include both the activity quantity and the binary activation variable when needed, plus linking constraints.
+  12. For multi-period state, include balance constraints, initial state, delayed returns/maturity timing, and final state requirements when stated.
+  13. For blending, recipe, diet, network, routing, scheduling, assignment, facility location, cutting-stock, cash-flow, and inventory models, include the standard structural constraints needed to make the formulation complete.
+  14. Do not invent placeholder values, default zeros, uniform costs, uniform capacities, or guessed data.
+
+  Output contract:
+  Return only one JSON/Python-literal compatible object with exactly these top-level keys:
+  {
+    "sets": [],
+    "parameters": [],
+    "variables": [],
+    "objective": {},
+    "constraints": []
+  }
+
+  sets:
+  - A JSON array of set dictionaries.
+  - Each dictionary must include "name", "dimen", and "elements".
+  - For large consecutive integer sets, use range(1, 201) or list(range(1, 201)) instead of listing every value.
+
+  parameters:
+  - A JSON array of parameter dictionaries.
+  - Scalars must include "name" and "value".
+  - Indexed parameters must include "name", "index_set", and "values".
+  - Use explicit literal values. Do not use list multiplication, comprehensions, formulas, or ellipses.
+  - Compound indexed keys must be strings.
+
+  variables:
+  - A JSON array of variable dictionaries.
+  - Each dictionary must include "name" and "domain".
+  - Include "index_set" when indexed, and "description" when it clarifies units or role.
+  - Domain must be one of: "Binary", "Integer", "NonNegativeIntegers", "NonNegativeReals", or "Reals".
+
+  objective:
+  - One JSON object with "name", "sense", and "expression".
+  - "sense" must be "maximize" or "minimize".
+  - "expression" must be one JSON string using existing "model." component names.
+  - Never return a raw Python/Pyomo expression as the expression value.
+
+  constraints:
+  - A JSON array of constraint dictionaries.
+  - Each dictionary must include "name" and "expression".
+  - "expression" must be one JSON string with exactly one top-level relational operator: <=, >=, or ==.
+  - Include "description" only when useful for preserving semantics.
+
+  Final answer must be only the JSON object, with no wrapper and no prose.
