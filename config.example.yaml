@@ -1,0 +1,17 @@
+# Set OPENAI_API_KEY in your environment. Do not commit config.yaml.
+base_url: ""
+model: "gpt-5.4-mini"
+api_key_env: "OPENAI_API_KEY"
+data_path: "data/datasets"
+output_path: "output"
+cache_path: "cache"
+usage_path: "usage_analysis"
+datasets:
+  - nl4opt
+iterations: 20
+time_limit: 500
+num_components: 3
+initial_accept_threshold: 1.0
+start: 0
+limit: 0
+flag: 0
